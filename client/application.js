@@ -1,4 +1,7 @@
-Meteor.Router.add({
-    '/': 'home',
-    '*': 'not_found'
-});
+/*
+
+    
+    subscriptions, basic Meteor.startup code
+
+
+ */
