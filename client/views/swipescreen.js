@@ -43,7 +43,17 @@ Template.studenthelp.studentName = function() {
 };
 
 Template.studenthelp.tutor = function() {
-	if (Boolean(student.isTutor)) {
-		return true;
-	}
+	return student.isTutor === 'true';
 };
+
+Template.studenthelp.events({
+	'click #noHelp': function() {
+		console.log('no help');
+	},
+	'click #needHelp': function() {
+		console.log('need help');
+	},
+	'click #tutor': function() {
+		console.log('work');
+	}
+});
