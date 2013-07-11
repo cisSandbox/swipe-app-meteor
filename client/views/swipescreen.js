@@ -5,9 +5,11 @@
  */
 
 var reg = new RegExp('^[0-9|;]+$');
+var studentName;
+Session.set("innerTemplate", "useridentry");
 
 Template.swipescreen.showDynamicContent = function() {
-	return Template['useridentry']();
+	return Template[Session.get("innerTemplate")]();
 };
 
 Template.useridentry.rendered = function() {
@@ -24,11 +26,18 @@ Template.useridentry.events = {
 		}
 		// handle if user is found
 		if(e.target.value.length === 8) {
-			if(Students.findOne({universityID: e.target.value})) {
+			var s = Students.findOne({universityID: e.target.value});
+			if(s) {
 				console.log("found");
+				studentName = s.name;
+				Session.set("innerTemplate", "studenthelp");
 			} else {
 				alert('student does not exist');
 			}
 		}
 	}
+};
+
+Template.studenthelp.studentName = function() {
+	return studentName;
 };
