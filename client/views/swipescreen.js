@@ -5,7 +5,7 @@
  */
 
 var reg = new RegExp('^[0-9|;]+$');
-var studentName;
+var student;
 Session.set("innerTemplate", "useridentry");
 
 Template.swipescreen.showDynamicContent = function() {
@@ -29,7 +29,7 @@ Template.useridentry.events = {
 			var s = Students.findOne({universityID: e.target.value});
 			if(s) {
 				console.log("found");
-				studentName = s.name;
+				student = s;
 				Session.set("innerTemplate", "studenthelp");
 			} else {
 				alert('student does not exist');
@@ -39,5 +39,11 @@ Template.useridentry.events = {
 };
 
 Template.studenthelp.studentName = function() {
-	return studentName;
+	return student.name;
+};
+
+Template.studenthelp.tutor = function() {
+	if (Boolean(student.isTutor)) {
+		return true;
+	}
 };

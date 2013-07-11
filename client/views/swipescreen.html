@@ -11,4 +11,9 @@
 
 <template name="studenthelp">
 	<h2>Hello, {{studentName}}</h2>
+    <button class="btn btn-primary" id="needHelp">Need Help?</button>
+    <button class="btn btn-primary" id="noHelp">Just Chillin'</button>
+    {{#if tutor}}
+    <button class="btn btn-danger" id="tutor">I'm Here to Work</button>
+    {{/if}}
 </template>
