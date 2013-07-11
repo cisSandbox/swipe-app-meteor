@@ -17,3 +17,12 @@
     <button class="btn btn-danger" id="tutor">I'm Here to Work</button>
     {{/if}}
 </template>
+
+<template name="courseselection">
+    <h2>Please select the course you need help with:</h2>
+    <div class="courses">
+        {{#each courses}}
+            <button class="btn btn-info">{{abbr}}</button>
+        {{/each}}
+    </div>
+</template>

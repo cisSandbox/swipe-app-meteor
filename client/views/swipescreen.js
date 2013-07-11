@@ -49,11 +49,18 @@ Template.studenthelp.tutor = function() {
 Template.studenthelp.events({
 	'click #noHelp': function() {
 		console.log('no help');
+		Visits.insert({name: student.name, timeIn: new Date(), timeOut: null, needHelp: false});
+		location.reload();
 	},
 	'click #needHelp': function() {
 		console.log('need help');
+		Session.set("innerTemplate", "courseselection");
 	},
 	'click #tutor': function() {
 		console.log('work');
 	}
 });
+
+Template.courseselection.courses = function() {
+	return Courses.find();
+};
