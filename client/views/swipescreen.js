@@ -64,3 +64,11 @@ Template.studenthelp.events({
 Template.courseselection.courses = function() {
 	return Courses.find();
 };
+
+Template.courseselection.events({
+	'click button': function(e) {
+		console.log(e.target.value);
+		Visits.insert({name: student.name, timeIn: new Date(), timeOut: null, needHelp: true, course: e.target.value});
+		location.reload();
+	}
+});
