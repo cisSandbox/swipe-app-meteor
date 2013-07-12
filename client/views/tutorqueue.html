@@ -1,3 +1,29 @@
-<template name="tutor-queue">
+<template name="tutorqueue">
     <h1>Tutor Queue</h1>
+    {{#if students}}
+    <table class="table table-striped">
+        <thead>
+            <th>Name</th>
+            <th>Time in Sandbox</th>
+            <th>Tap Out</th>
+        </thead>
+        <tbody>
+        {{#each needHelpStudents}}
+            <tr>
+                {{> needhelp}}
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+    {{else}}
+        <h2>No one here</h2>
+    {{/if}}
+</template>
+
+<template name="needhelp">   
+    <td>{{name}}</td>
+    <td>{{timeDiff}}</td>
+    <td>
+        <button class="btn btn-success"><i class="icon-pencil icon-white"></i> Tutor Form</button>
+    </td>    
 </template>

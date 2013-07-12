@@ -1,5 +1,6 @@
 <template name="tapoutqueue">
     <h1>Tap Out</h1>
+    {{#if students}}
     <table class="table table-striped">
     	<thead>
     		<th>Name</th>
@@ -14,6 +15,9 @@
 	    {{/each}}
     	</tbody>
     </table>
+    {{else}}
+    <h2>No one here</h2>
+    {{/if}}
 </template>
 
 <template name="student">   

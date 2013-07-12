@@ -8,6 +8,10 @@ Template.tapoutqueue.signedInStudents = function() {
     return Visits.find({'timeOut': null});
 };
 
+Template.tapoutqueue.students = function() {
+    return Visits.find({'timeOut': null}).fetch().length > 0;
+};
+
 Template.student.timeDiff = function() {
 	var today = new Date();
 	var diff = Math.ceil((today.getTime() - this.timeIn) / 216000);
