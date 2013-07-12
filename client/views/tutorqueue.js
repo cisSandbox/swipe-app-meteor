@@ -18,13 +18,8 @@ Template.needhelp.timeDiff = function() {
     return diff + ' minutes';
 };
 
-setInterval(function() {
-    location.reload();
-}, 10000);
-
 Template.needhelp.events({
     'click button': function() {
-        console.log('hello');
-        // Visits.update({_id: this._id}, {$set: {'timeOut': new Date()}});
+        Meteor.Router.to('/tutor-form/' + this._id);
     }
 });
