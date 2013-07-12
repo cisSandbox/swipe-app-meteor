@@ -1,12 +1,25 @@
 <template name="tapoutqueue">
     <h1>Tap Out</h1>
-    <div class="tapout">
-    {{#each signedInStudents}}
-        {{> student}}
-    {{/each}}
-    </div>
+    <table class="table table-striped">
+    	<thead>
+    		<th>Name</th>
+    		<th>Time in Sandbox</th>
+    		<th>Tap Out</th>
+    	</thead>
+    	<tbody>
+	    {{#each signedInStudents}}
+	    	<tr>
+	        	{{> student}}
+	    	</tr>
+	    {{/each}}
+    	</tbody>
+    </table>
 </template>
 
 <template name="student">   
-    <li>{{name}}</li>    
+    <td>{{name}}</td>
+    <td>{{timeDiff}}</td>
+    <td>
+    	<button class="btn btn-danger">Leave</button>
+    </td>    
 </template>
