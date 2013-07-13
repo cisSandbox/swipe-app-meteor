@@ -1,0 +1,55 @@
+<template name="tutorform">
+	<h1>Tutor Form</h1>
+	<form class="form-horizontal">
+		<div class="control-group">
+			<label class="control-label" for="inputSName">Student Name:</label>
+			<div class="controls">
+				<input type="text" id="inputSName" value="{{currentVisit.name}}" disabled>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputTName">Tutor Name:</label>
+			<div class="controls">
+				<select id="inputTName">
+				{{#each tutors}}
+				  <option>{{name}}</option>
+				{{/each}}
+				</select>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputCourseSection">Course Section:</label>
+			<div class="controls">
+				<select id="inputCourseSection">
+				{{#each courseSections.sections}}
+				  <option>{{number}} - {{professor}}</option>
+				{{/each}}
+				</select>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputDuration">Duration:</label>
+			<div class="controls">
+				<select id="inputDuration">
+				  <option>0 - 10 minutes</option>
+				  <option>10 - 20 minutes</option>
+				  <option>20 - 30 minutes</option>
+				  <option>30 - 45 minutes</option>
+				  <option>45 - 60 minutes</option>
+				  <option>Over an hour</option>
+				</select>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputDescription">Activity Description:</label>
+			<div class="controls">
+				<textarea rows="4" id="inputDescription"></textarea>
+			</div>
+		</div>
+		<div class="control-group">
+			<div class="controls">
+				<button type="submit" class="btn" id="inputSubmit">Submit</button>
+			</div>
+		</div>
+	</form>
+</template>

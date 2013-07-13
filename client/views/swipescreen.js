@@ -26,13 +26,18 @@ Template.useridentry.events = {
 		}
 		// handle if user is found
 		if(e.target.value.length === 8) {
-			var s = Students.findOne({universityID: e.target.value});
-			if(s) {
-				console.log("found");
-				student = s;
-				Session.set("innerTemplate", "studenthelp");
+			if(Visits.find({universityID: e.target.value}).fetch().length > 0){
+				alert('student already swiped in');
+				e.target.value = '';
 			} else {
-				alert('student does not exist');
+				var s = Students.findOne({universityID: e.target.value});
+				if(s) {
+					console.log("found");
+					student = s;
+					Session.set("innerTemplate", "studenthelp");
+				} else {
+					alert('student does not exist');
+				}
 			}
 		}
 	}
@@ -49,7 +54,7 @@ Template.studenthelp.tutor = function() {
 Template.studenthelp.events({
 	'click #noHelp': function() {
 		console.log('no help');
-		Visits.insert({name: student.name, timeIn: new Date(), timeOut: null, needHelp: false});
+		Visits.insert({name: student.name, timeIn: new Date(), timeOut: null, needHelp: false, universityID: student.universityID});
 		location.reload();
 	},
 	'click #needHelp': function() {
