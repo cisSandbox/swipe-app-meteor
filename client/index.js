@@ -3,3 +3,9 @@ Template.body.errors = function() {
 		return Session.get('errors');
 	}
 };
+
+Template.body.events = ({
+	'click #close-alert': function() {
+		Session.set('errors', null);
+	}
+});

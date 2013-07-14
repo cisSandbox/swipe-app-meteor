@@ -19,27 +19,22 @@ var frontScreenPages = ['swipescreen', 'tutorqueue', 'tapoutqueue', 'home'];
 
 Meteor.Router.filters({
 	'checkLogin': function(page) {
-		console.log(page);
 		if (Meteor.user()) {
-			console.log('logged in');
-
-			if(Roles.userIsInRole(Meteor.user()._id, 'admin')) {
-				console.log('admin');
+			if(Roles.userIsInRole(Meteor.userId(), 'admin')) {
 				return page;
-			} else if(Roles.userIsInRole(Meteor.user()._id, 'frontScreen') && jQuery.inArray(page, frontScreenPages) > -1) {
+			} else if(Roles.userIsInRole(Meteor.userId(), 'frontScreen') && jQuery.inArray(page, frontScreenPages) > -1) {
 				Session.set('errors', null);
 				return page;
-			} else if(Roles.userIsInRole(Meteor.user()._id, 'professor') && jQuery.inArray(page, professorPages) > -1) {
+			} else if(Roles.userIsInRole(Meteor.userId(), 'professor') && jQuery.inArray(page, professorPages) > -1) {
 				Session.set('errors', null);
 				return page;
-			} else if(Roles.userIsInRole(Meteor.user()._id, 'tutor') && jQuery.inArray(page, tutorPages) > -1) {
+			} else if(Roles.userIsInRole(Meteor.userId(), 'tutor') && jQuery.inArray(page, tutorPages) > -1) {
 				Session.set('errors', null);
 				return page;
 			} else {
 				Session.set('errors', {'permissionsError': 'You do not have permission to access the ' + page + ' page.'});
 				return 'login';
 			}
-
 		} else {
 			return 'login';
 		}

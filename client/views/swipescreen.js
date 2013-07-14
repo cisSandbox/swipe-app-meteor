@@ -22,7 +22,6 @@ Template.useridentry.events = {
 		var character = String.fromCharCode(e.which);
 		if(reg.test(character)) {
 			e.target.value += character;
-			console.log(e.target.value);
 		}
 		// handle if user is found
 		if(e.target.value.length === 8) {
@@ -33,11 +32,11 @@ Template.useridentry.events = {
 				Session.set('errors', null);
 				var s = Students.findOne({universityID: e.target.value});
 				if(s) {
-					console.log("found");
 					student = s;
 					Session.set("innerTemplate", "studenthelp");
 				} else {
-					alert('student does not exist');
+					Session.set('errors', {'swipeError': 'Student does not exist'});
+					e.target.value = '';
 				}
 			}
 		}
