@@ -27,9 +27,10 @@ Template.useridentry.events = {
 		// handle if user is found
 		if(e.target.value.length === 8) {
 			if(Visits.find({universityID: e.target.value}).fetch().length > 0){
-				alert('student already swiped in');
+				Session.set('errors', {'swipeError': 'Student already swiped in'});
 				e.target.value = '';
 			} else {
+				Session.set('errors', null);
 				var s = Students.findOne({universityID: e.target.value});
 				if(s) {
 					console.log("found");

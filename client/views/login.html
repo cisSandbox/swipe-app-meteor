@@ -1,5 +1,9 @@
 <template name="login">
 	<h1>Login to Sandbox Swipe System</h1>
+	{{#if user}}
+		<h2>Hello {{user.username}}</h2>
+		<button class="btn btn-danger" id="logout">Logout</button>
+	{{else}}
 	<form id="login-form" class="form-horizontal">
       <div class="control-group">
       	<label class="control-label" for="inputEmail">Email:</label>
@@ -19,4 +23,5 @@
 		</div>
       </div>
    </form>
+   {{/if}}
 </template>

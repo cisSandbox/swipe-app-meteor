@@ -9,6 +9,14 @@
 <template name="body">
     <div class="container">
         <div class="row-fluid">
+  			{{#if errors}}
+			<div class="alert alert-error">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				{{errors.permissionsError}}
+				{{errors.loginError}}
+				{{errors.swipeError}}
+			</div>
+			{{/if}}
             {{renderPage layoutName}}
         </div>
     </div>
