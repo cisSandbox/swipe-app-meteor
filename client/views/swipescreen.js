@@ -25,7 +25,7 @@ Template.useridentry.events = {
 		}
 		// handle if user is found
 		if(e.target.value.length === 8) {
-			if(Visits.find({universityID: e.target.value}).fetch().length > 0){
+			if(Visits.find({universityID: e.target.value, timeOut: null}).count() > 0){
 				Session.set('errors', {'swipeError': 'Student already swiped in'});
 				e.target.value = '';
 			} else {

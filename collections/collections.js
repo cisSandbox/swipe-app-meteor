@@ -12,18 +12,6 @@ Courses       = new Meteor.Collection('courses');
 TutoredVisits = new Meteor.Collection('tutoredvisits');
 
 
-Students.allow({
-	insert: function(userId) {
-		return Roles.userIsInRole(userId, 'admin');
-	},
-	update: function(userId) {
-		return Roles.userIsInRole(userId, 'admin');
-	},
-	remove: function(userId) {
-		return Roles.userIsInRole(userId, 'admin');
-	}
-});
-
 Visits.allow({
 	insert: function(userId) {
 		return (Roles.userIsInRole(userId, 'admin') || Roles.userIsInRole(userId, 'tutor'));
@@ -33,6 +21,18 @@ Visits.allow({
 	},
 	remove: function(userId) {
 		return (Roles.userIsInRole(userId, 'admin') || Roles.userIsInRole(userId, 'tutor'));
+	}
+});
+
+Students.allow({
+	insert: function(userId) {
+		return Roles.userIsInRole(userId, 'admin');
+	},
+	update: function(userId) {
+		return Roles.userIsInRole(userId, 'admin');
+	},
+	remove: function(userId) {
+		return Roles.userIsInRole(userId, 'admin');
 	}
 });
 
@@ -61,9 +61,10 @@ TutoredVisits.allow({
 });
 
 /*
-Students.insert({name: "Nick Hentschel", shortName: "hentsch_nich", universityID: "03236228", isTutor: "true"});
-Students.insert({name: "Harry Bentley", shortName: "bentley_harr", universityID: "12345678", isTutor: "false"});
-Students.insert({name: "John Smith", shortName: "smith_john", universityID: "11111111", isTutor: "false"});
+Students.insert({name: "Nick Hentschel", shortName: "hentsch_nich", universityID: "03236228"});
+Students.insert({name: "Harry Bentley", shortName: "bentley_harr", universityID: "12345678"});
+Students.insert({name: "John Smith", shortName: "smith_john", universityID: "11111111"});
 
 Courses.insert({ name: "Intro to IT", abbr: "IT101", sections: [{number: "003", professor: "Frydenberg"}, {number: "001", professor: "Cooprider"}]});
-Courses.insert({ name: "Intro to Programming", abbr: "CS180", sections: [{number: "001", professor: "Lucas"}]});*/
+Courses.insert({ name: "Intro to Programming", abbr: "CS180", sections: [{number: "001", professor: "Lucas"}]}); 
+*/
