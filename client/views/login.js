@@ -20,7 +20,10 @@ Template.login.events = ({
 				Session.set('errors', {'loginError': 'Incorrect credentials. Please try again.'});
 			} else {
 				Session.set('errors', null);
-				Meteor.Router.to('/home');
+				if(Roles.userIsInRole(Meteor.userId(), 'frontScreen'))
+					Meteor.Router.to('/home');
+				else
+					Meteor.Router.to('/dashboard');
 			}
 		});
 		return false;

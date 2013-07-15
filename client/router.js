@@ -5,6 +5,7 @@ Meteor.Router.add({
     '/swipe-screen': 'swipescreen',
     '/tutor-queue': 'tutorqueue',
     '/tapout-queue': 'tapoutqueue',
+    '/dashboard': 'dashboard',
     '/tutor-form/:id': function(id) {
         Session.set('visitID', id);
         return 'tutorform';
@@ -12,8 +13,8 @@ Meteor.Router.add({
     '*': 'not_found'
 });
 
-var tutorPages       = ['dashboard', 'tutorqueue', 'tapoutqueue', 'home', 'tutorform'];
-var professorPages   = ['dashboard', 'home', 'tapoutqueue'];
+var tutorPages       = ['dashboard', 'tutorqueue', 'tapoutqueue', 'home', 'tutorform', 'dashboard'];
+var professorPages   = ['dashboard', 'home', 'tapoutqueue', 'dashboard'];
 var frontScreenPages = ['swipescreen', 'tutorqueue', 'tapoutqueue', 'home'];
 
 
