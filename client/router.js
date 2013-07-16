@@ -19,24 +19,26 @@ var frontScreenPages = ['swipescreen', 'tutorqueue', 'tapoutqueue', 'home'];
 
 
 Meteor.Router.filters({
-	'checkLogin': function(page) {
-		if (Meteor.user()) {
-			if(Roles.userIsInRole(Meteor.userId(), 'admin')) {
-				return page;
-			} else if(Roles.userIsInRole(Meteor.userId(), 'frontScreen') && jQuery.inArray(page, frontScreenPages) > -1) {
-				return page;
-			} else if(Roles.userIsInRole(Meteor.userId(), 'professor') && jQuery.inArray(page, professorPages) > -1) {
-				return page;
-			} else if(Roles.userIsInRole(Meteor.userId(), 'tutor') && jQuery.inArray(page, tutorPages) > -1) {
-				return page;
-			} else {
+    'checkLogin': function(page) {
+        var goto;
+        if (Meteor.user()) {
+            if (Roles.userIsInRole(Meteor.userId(), 'admin')) {
+                goto = page;
+            } else if (Roles.userIsInRole(Meteor.userId(), 'frontScreen') && jQuery.inArray(page, frontScreenPages) > -1) {
+                goto = page;
+            } else if (Roles.userIsInRole(Meteor.userId(), 'professor') && jQuery.inArray(page, professorPages) > -1) {
+                goto = page;
+            } else if (Roles.userIsInRole(Meteor.userId(), 'tutor') && jQuery.inArray(page, tutorPages) > -1) {
+                goto = page;
+            } else {
                 Meteor.Errors.throw('You do not have permission to access the ' + page + ' page.');
-				return 'login'
-			}
-		} else {
-			return 'login';
-		}
-	}
+                goto = 'login';
+            }
+        } else {
+            goto = 'login';
+        }
+        return goto;
+    }
 });
 
 Meteor.Router.filter('checkLogin', {except: 'login'});

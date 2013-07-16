@@ -6,16 +6,17 @@
 
  */
 
- Session.set('currentlyTutoring', false);
+Session.set('currentlyTutoring', false);
 
 Template.dashboard.showDynamicContent = function() {
     var roles = Meteor.user().roles;
-    if(jQuery.inArray('admin', roles) > -1)
+    if (jQuery.inArray('admin', roles) > -1) {
         Session.set('innerTemplate', 'admindashboard');
-    else if(jQuery.inArray('professor', roles)  > -1)
+    } else if (jQuery.inArray('professor', roles)  > -1) {
         Session.set('innerTemplate', 'professordashboard');
-    else if(jQuery.inArray('tutor', roles)  > -1)
+    } else if (jQuery.inArray('tutor', roles)  > -1) {
         Session.set('innerTemplate', 'tutordashboard');
+    }
     return Template[Session.get("innerTemplate")]();
 };
 
@@ -29,13 +30,10 @@ Template.dashboard.events({
         Meteor.Router.to('/login');
     },
     'click #tutorButton': function() {
-        console.log('click');
-        if(Session.get('currentlyTutoring')) {
-            console.log('tutoring');
+        if (Session.get('currentlyTutoring')) {
             WorkVisits.update({_id: Session.get('currentlyTutoring')}, {$set: {timeOut: new Date()}});
             Session.set('currentlyTutoring', false);
         } else {
-            console.log('not tutoring');
             Session.set('currentlyTutoring', WorkVisits.insert({tutorId: Meteor.userId(), timeIn: new Date(), timeOut: null}));
             // WorkVisits.insert({tutorId: Meteor.userId(), timeIn: new Date(), timeOut: null});
         }
