@@ -12,6 +12,11 @@ Template.swipescreen.showDynamicContent = function() {
 	return Template[Session.get("innerTemplate")]();
 };
 
+Template.currenttutors.tutors = function() {
+
+    return true;
+}
+
 Template.useridentry.rendered = function() {
 	$(this.find('#student-id-entry')).focus();
 };

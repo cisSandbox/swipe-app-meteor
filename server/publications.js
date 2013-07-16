@@ -27,3 +27,9 @@ Meteor.publish('workVisits', function() {
         return WorkVisits.find();
     }
 });
+
+Meteor.publish('users', function() {
+    if(Roles.userIsInRole(this.userId, 'admin') || Roles.userIsInRole(this.userId, 'frontScreen')) {
+        return Meteor.users.find();
+    }
+});

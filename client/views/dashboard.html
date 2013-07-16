@@ -5,7 +5,9 @@
 </template>
 
 <template name="tutordashboard">
-	<button class="btn {{#if currentlyTutoring}}btn-danger{{else}}btn-success{{/if}}" id="tutorButton">{{#if currentlyTutoring}}Stop Working{{else}}Start Working{{/if}}</button>
+	<button class="btn {{#if currentlyTutoring}}btn-danger{{else}}btn-success{{/if}}" id="tutorButton">
+        {{#if currentlyTutoring}}Stop Working{{else}}Start Working{{/if}}
+    </button>
 </template>
 
 <template name="admindashboard"></template>
