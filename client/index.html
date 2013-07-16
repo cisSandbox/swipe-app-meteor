@@ -9,14 +9,7 @@
 <template name="body">
     <div class="container">
         <div class="row-fluid">
-  			{{#if errors}}
-			<div class="alert alert-error">
-				<button type="button" class="close" data-dismiss="alert" id="close-alert">&times;</button>
-				{{errors.permissionsError}}
-				{{errors.loginError}}
-				{{errors.swipeError}}
-			</div>
-			{{/if}}
+            {{> meteorErrors}}
             {{renderPage layoutName}}
         </div>
     </div>

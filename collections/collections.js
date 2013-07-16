@@ -14,13 +14,13 @@ TutoredVisits = new Meteor.Collection('tutoredvisits');
 
 Visits.allow({
 	insert: function(userId) {
-		return (Roles.userIsInRole(userId, 'admin') || Roles.userIsInRole(userId, 'tutor'));
+		return (Roles.userIsInRole(userId, 'admin') || Roles.userIsInRole(userId, 'tutor') || Roles.userIsInRole(userId, 'frontScreen'));
 	},
 	update: function(userId) {
-		return (Roles.userIsInRole(userId, 'admin') || Roles.userIsInRole(userId, 'tutor'));
+		return (Roles.userIsInRole(userId, 'admin') || Roles.userIsInRole(userId, 'tutor') || Roles.userIsInRole(userId, 'frontScreen'));
 	},
 	remove: function(userId) {
-		return (Roles.userIsInRole(userId, 'admin') || Roles.userIsInRole(userId, 'tutor'));
+		return (Roles.userIsInRole(userId, 'admin') || Roles.userIsInRole(userId, 'tutor') || Roles.userIsInRole(userId, 'frontScreen'));
 	}
 });
 

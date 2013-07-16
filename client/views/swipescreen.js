@@ -26,16 +26,15 @@ Template.useridentry.events = {
 		// handle if user is found
 		if(e.target.value.length === 8) {
 			if(Visits.find({universityID: e.target.value, timeOut: null}).count() > 0){
-				Session.set('errors', {'swipeError': 'Student already swiped in'});
+                Meteor.Errors.throw('Student already swiped in');
 				e.target.value = '';
 			} else {
-				Session.set('errors', null);
 				var s = Students.findOne({universityID: e.target.value});
 				if(s) {
 					student = s;
 					Session.set("innerTemplate", "studenthelp");
 				} else {
-					Session.set('errors', {'swipeError': 'Student does not exist'});
+                    Meteor.Errors.throw('Student does not exist');
 					e.target.value = '';
 				}
 			}
@@ -60,9 +59,6 @@ Template.studenthelp.events({
 	'click #needHelp': function() {
 		console.log('need help');
 		Session.set("innerTemplate", "courseselection");
-	},
-	'click #tutor': function() {
-		console.log('work');
 	}
 });
 

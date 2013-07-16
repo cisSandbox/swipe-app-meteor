@@ -3,7 +3,8 @@
   "dependencies": {
     "basePackages": {
       "router": {},
-      "roles": {}
+      "roles": {},
+      "meteor-flash-messages": {}
     },
     "packages": {
       "router": {
@@ -15,6 +16,11 @@
         "git": "https://github.com/alanning/meteor-roles.git",
         "tag": "v1.0.5",
         "commit": "a6e0ce33f8dc69a816165c458b138c2acb30ad0e"
+      },
+      "meteor-flash-messages": {
+        "git": "https://github.com/andreavaghi/meteor-flash-messages.git",
+        "tag": "v0.1.0",
+        "commit": "4aac12630b4a08ac5116c63ffd2236240bd4b3cc"
       },
       "page-js-ie-support": {
         "git": "https://github.com/tmeasday/meteor-page-js-ie-support.git",
