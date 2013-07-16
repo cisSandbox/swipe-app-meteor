@@ -13,21 +13,21 @@ Template.swipescreen.showDynamicContent = function() {
 };
 
 Template.currenttutors.tutors = function() {
-    var workVisits = WorkVisits.find();
+    var workVisits = WorkVisits.find({timeOut: null});
     var users = Meteor.users.find();
     var tutorsOnDuty = [];
     if(workVisits) {
         workVisits.forEach(function(workVisit) {
             users.forEach(function(user) {
-                if(workVisits.tutorId === user._id) {
-                    tutorsOnDuty.push(user);
-                }
+	            if(workVisit.tutorId === user._id) {
+	                tutorsOnDuty.push(user);
+	            }
             });
         });
     }
-    Session.set('loggedInTutors', tutorsOnDuty);
-    return Session.get('loggedInTutors');
-}
+    console.log(tutorsOnDuty);
+    return tutorsOnDuty;
+};
 
 Template.useridentry.rendered = function() {
 	$(this.find('#student-id-entry')).focus();
