@@ -10,7 +10,20 @@ Students      = new Meteor.Collection('students');
 Visits        = new Meteor.Collection('visits');
 Courses       = new Meteor.Collection('courses');
 TutoredVisits = new Meteor.Collection('tutoredvisits');
+WorkVisits    = new Meteor.Collection('workvisits');
 
+
+WorkVisits.allow({
+	insert: function(userId) {
+		return (Roles.userIsInRole(userId, 'admin') || Roles.userIsInRole(userId, 'tutor'));
+	},
+	update: function(userId) {
+		return (Roles.userIsInRole(userId, 'admin') || Roles.userIsInRole(userId, 'tutor'));
+	},
+	remove: function(userId) {
+		return (Roles.userIsInRole(userId, 'admin'));
+	}
+});
 
 Visits.allow({
 	insert: function(userId) {

@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/.gitignore" afterPath="$PROJECT_DIR$/packages/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/collections.js" afterPath="$PROJECT_DIR$/collections/collections.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.js" afterPath="$PROJECT_DIR$/client/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/router.js" afterPath="$PROJECT_DIR$/client/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart.json" afterPath="$PROJECT_DIR$/smart.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart.lock" afterPath="$PROJECT_DIR$/smart.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/swipescreen.html" afterPath="$PROJECT_DIR$/client/views/swipescreen.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/swipescreen.js" afterPath="$PROJECT_DIR$/client/views/swipescreen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/dashboard.js" afterPath="$PROJECT_DIR$/client/views/dashboard.js" />
     </list>
     <ignored path="swipe-app-meteor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,55 +28,65 @@
     <favorites_list name="swipe-app-meteor" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/router.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="16" selection-start="1162" selection-end="1245" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="3" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="swipescreen.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/swipescreen.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="62" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.meteor/local/build/static_cacheable/client/views/login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="9" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/router.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="32" column="16" selection-start="1162" selection-end="1245" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="4" column="3" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="swipescreen.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/views/swipescreen.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="9" column="0" selection-start="129" selection-end="237" vertical-scroll-proportion="0.15044248">
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="login.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.meteor/local/build/static_cacheable/client/views/login.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="9" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="dashboard.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="11" column="0" selection-start="144" selection-end="144" vertical-scroll-proportion="0.1815534">
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -107,9 +109,11 @@
         <option value="$PROJECT_DIR$/client/router.js" />
         <option value="$PROJECT_DIR$/client/views/swipescreen.js" />
         <option value="$PROJECT_DIR$/.meteor/local/build/static_cacheable/client/views/login.js" />
+        <option value="$PROJECT_DIR$/client/views/dashboard.js" />
       </list>
     </option>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="4" />
     <option name="y" value="22" />
@@ -199,12 +203,30 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RunManager">
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" name="Default" comment="" />
@@ -221,7 +243,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21764706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14759359" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -304,19 +326,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.js">
+    <entry file="file://$PROJECT_DIR$/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="3" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
+        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/swipescreen.js">
+    <entry file="file://$PROJECT_DIR$/client/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="62" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="4" column="3" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -329,15 +349,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.meteor/local/build/static_cacheable/client/views/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="9" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+        <state line="9" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.html">
+    <entry file="file://$PROJECT_DIR$/client/views/swipescreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="9" column="0" selection-start="129" selection-end="237" vertical-scroll-proportion="0.15044248">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="144" selection-end="144" vertical-scroll-proportion="0.1815534">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

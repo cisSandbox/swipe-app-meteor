@@ -1,4 +1,13 @@
 <template name="dashboard">
     <h1>Dashboard</h1>
+    {{{showDynamicContent}}}
     <button class="btn btn-danger" id="logout">Logout</button>
 </template>
+
+<template name="tutordashboard">
+	<button class="btn {{#if currentlyTutoring}}btn-danger{{else}}btn-success{{/if}}" id="tutorButton">{{#if currentlyTutoring}}Stop Working{{else}}Start Working{{/if}}</button>
+</template>
+
+<template name="admindashboard"></template>
+
+<template name="professordashboard"></template>

@@ -21,3 +21,9 @@ Meteor.publish('tutoredVisits', function() {
         return TutoredVisits.find();
     }
 });
+
+Meteor.publish('workVisits', function() {
+    if(this.userId) {
+        return WorkVisits.find();
+    }
+});
