@@ -5,7 +5,10 @@
 </template>
 
 <template name="currenttutors">
-
+    <h2>Tutors Available:</h2>
+    {{#each tutors}}
+        {{tutors.email}}
+    {{/each}}
 </template>
 
 <template name="useridentry">

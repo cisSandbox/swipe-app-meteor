@@ -11,3 +11,4 @@ Meteor.subscribe('courses');
 Meteor.subscribe('visits');
 Meteor.subscribe('tutoredVisits');
 Meteor.subscribe('workVisits');
+Meteor.subscribe('users');

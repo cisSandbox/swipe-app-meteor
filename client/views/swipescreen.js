@@ -13,8 +13,20 @@ Template.swipescreen.showDynamicContent = function() {
 };
 
 Template.currenttutors.tutors = function() {
-
-    return true;
+    var workVisits = WorkVisits.find();
+    var users = Meteor.users.find();
+    var tutorsOnDuty = [];
+    if(workVisits) {
+        workVisits.forEach(function(workVisit) {
+            users.forEach(function(user) {
+                if(workVisits.tutorId === user._id) {
+                    tutorsOnDuty.push(user);
+                }
+            });
+        });
+    }
+    Session.set('loggedInTutors', tutorsOnDuty);
+    return Session.get('loggedInTutors');
 }
 
 Template.useridentry.rendered = function() {
