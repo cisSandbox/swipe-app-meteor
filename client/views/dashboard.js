@@ -6,8 +6,6 @@
 
  */
 
-Session.set('currentlyTutoring', false);
-
 Template.dashboard.showDynamicContent = function() {
     var roles = Meteor.user().roles;
     if (jQuery.inArray('admin', roles) > -1) {
@@ -21,21 +19,23 @@ Template.dashboard.showDynamicContent = function() {
 };
 
 Template.tutordashboard.currentlyTutoring = function() {
-    return Session.get('currentlyTutoring');
+    return WorkVisits.findOne({tutorId: Meteor.userId(), timeOut: null});
 };
 
 Template.dashboard.events({
     'click #logout': function() {
         Meteor.logout();
         Meteor.Router.to('/login');
-    },
+    }
+});
+
+Template.tutordashboard.events({
     'click #tutorButton': function() {
-        if (Session.get('currentlyTutoring')) {
-            WorkVisits.update({_id: Session.get('currentlyTutoring')}, {$set: {timeOut: new Date()}});
-            Session.set('currentlyTutoring', false);
+        var visit = WorkVisits.findOne({tutorId: Meteor.userId(), timeOut: null});
+        if (visit) {
+            WorkVisits.update({_id: visit._id}, {$set: {timeOut: new Date()}});
         } else {
-            Session.set('currentlyTutoring', WorkVisits.insert({tutorId: Meteor.userId(), timeIn: new Date(), timeOut: null}));
-            // WorkVisits.insert({tutorId: Meteor.userId(), timeIn: new Date(), timeOut: null});
+            WorkVisits.insert({tutorId: Meteor.userId(), timeIn: new Date(), timeOut: null});
         }
     }
 });
