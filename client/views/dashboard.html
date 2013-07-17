@@ -14,6 +14,33 @@
     </button>
 </template>
 
-<template name="admindashboard"></template>
+<template name="admindashboard">
+    <table class="table table-bordered">
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role(s)</th>
+        </thead>
+        <tbody>
+            {{#each users}}
+                {{> userstable}}
+            {{/each}}
+        </tbody>
+    </table>
+</template>
+
+<template name="userstable">
+    <tr>
+        <td>{{_id}}</td>
+        <td>{{profile.name}}</td>
+        <td>
+            {{#each emails}}
+                {{address}}
+            {{/each}}
+        </td>
+        <td>{{roles}}</td>
+    </tr>
+</template>
 
 <template name="professordashboard"></template>

@@ -15,16 +15,18 @@ Template.dashboard.showDynamicContent = function() {
     return Template[Session.get("innerTemplate")]();
 };
 
-Template.tutordashboard.currentlyTutoring = function() {
-    return WorkVisits.findOne({tutorId: Meteor.userId(), timeOut: null});
-};
-
 Template.dashboard.events({
     'click #logout': function() {
         Meteor.logout();
         Meteor.Router.to('/login');
     }
 });
+
+
+Template.tutordashboard.currentlyTutoring = function() {
+    return WorkVisits.findOne({tutorId: Meteor.userId(), timeOut: null});
+};
+
 
 Template.tutordashboard.events({
     'click #tutorButton': function() {
@@ -36,3 +38,7 @@ Template.tutordashboard.events({
         }
     }
 });
+
+Template.admindashboard.users = function() {
+    return Meteor.users.find();
+};
