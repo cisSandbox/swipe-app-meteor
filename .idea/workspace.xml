@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" name="Default" comment="˚">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/dashboard.html" afterPath="$PROJECT_DIR$/client/views/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/dashboard.js" afterPath="$PROJECT_DIR$/client/views/dashboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" name="Default" comment="˚" />
     <ignored path="swipe-app-meteor.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374091219113" ignored="false" />
@@ -19,7 +14,7 @@
     <file path="/article.txt" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374001841865" ignored="false" />
     <file path="$USER_HOME$/Dropbox/Doc/Emails/Tips-7-16/articlehtml.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374002966349" ignored="false" />
     <file path="/a.dummy" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374089759759" ignored="false" />
-    <file path="$USER_HOME$/Dropbox/Doc/Emails/Tips-7-16/tips.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374092964067" ignored="false" />
+    <file path="$USER_HOME$/Dropbox/Doc/Emails/Tips-7-16/tips.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374096403630" ignored="false" />
     <file path="/tips.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374092964067" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/jquery/jquery.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374018065459" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/client/router.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374018065459" ignored="false" />
@@ -33,16 +28,19 @@
     <file path="$PROJECT_DIR$/../aycl-landing-pages/sass/_base.scss" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374074125986" ignored="false" />
     <file path="/_base.scss" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374074119794" ignored="false" />
     <file path="$PROJECT_DIR$/../aycl-landing-pages/sass/_grid-settings.scss" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374072785724" ignored="false" />
-    <file path="$PROJECT_DIR$/../UI18/_themes/ui18/css/ui18.css" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374089580952" ignored="false" />
+    <file path="$PROJECT_DIR$/../UI18/_themes/ui18/css/ui18.css" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374095907155" ignored="false" />
     <file path="$PROJECT_DIR$/../UI18/_content/agenda.md" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374085445649" ignored="false" />
     <file path="$PROJECT_DIR$/../UI18/_themes/ui18/templates/agenda.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374085445649" ignored="false" />
-    <file path="$PROJECT_DIR$/../UI18/_themes/ui18/templates/registration-information.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374089675934" ignored="false" />
-    <file path="$PROJECT_DIR$/../UI18/_content/registration-information.md" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374091602222" ignored="false" />
+    <file path="$PROJECT_DIR$/../UI18/_themes/ui18/templates/registration-information.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374095907155" ignored="false" />
+    <file path="$PROJECT_DIR$/../UI18/_content/registration-information.md" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374095907155" ignored="false" />
     <file path="/registration-information.md" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374089593394" ignored="false" />
     <file path="$PROJECT_DIR$/../UI18/_cache/_app/content/content.php" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374090331261" ignored="false" />
     <file path="/ui18.css" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374089527892" ignored="false" />
-    <file path="$PROJECT_DIR$/../UI18/_themes/ui18/partials/register-button.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374090320684" ignored="false" />
+    <file path="$PROJECT_DIR$/../UI18/_themes/ui18/partials/register-button.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374095907155" ignored="false" />
     <file path="/register-button.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374090318858" ignored="false" />
+    <file path="$USER_HOME$/Dropbox/Doc/Emails/Tips-7-16/plain_text.txt" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374096075743" ignored="false" />
+    <file path="/plain_text.txt" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374093746889" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Shared/uiedev/htdocs/uie/articles/hiring_a_ux_pro.php" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374095578752" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
