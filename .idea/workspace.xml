@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" name="Default" comment="˚">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Meteor.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/dashboard.html" afterPath="$PROJECT_DIR$/client/views/dashboard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/dashboard.js" afterPath="$PROJECT_DIR$/client/views/dashboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/swipe-app-meteor.iml" afterPath="$PROJECT_DIR$/.idea/swipe-app-meteor.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="swipe-app-meteor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +21,8 @@
     <file path="/tips.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374005126495" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/jquery/jquery.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374018065459" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/client/router.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374018065459" ignored="false" />
-    <file path="/dashboard.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374019810335" ignored="false" />
+    <file path="/dashboard.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374021199771" ignored="false" />
+    <file path="/dashboard.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374021281838" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,10 +62,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/dashboard.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="73" selection-start="363" selection-end="363" vertical-scroll-proportion="0.13545817">
+                <state line="18" column="47" selection-start="554" selection-end="554" vertical-scroll-proportion="-11.769231">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/application.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="13" column="26" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -82,10 +89,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="publications.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="publications.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/server/publications.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="2" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0">
+                <state line="25" column="22" selection-start="492" selection-end="492" vertical-scroll-proportion="0.40246212">
                   <folding />
                 </state>
               </provider>
@@ -104,10 +111,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="dashboard.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="dashboard.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="73" selection-start="649" selection-end="649" vertical-scroll-proportion="0.24757281">
+                <state line="9" column="25" selection-start="104" selection-end="104" vertical-scroll-proportion="0.048295453">
                   <folding />
                 </state>
               </provider>
@@ -134,7 +141,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/client/index.html" />
-        <option value="$PROJECT_DIR$/client/views/dashboard.html" />
         <option value="$PROJECT_DIR$/client/application.js" />
         <option value="$PROJECT_DIR$/client/views/swipescreen.html" />
         <option value="$PROJECT_DIR$/client/views/swipescreen.js" />
@@ -144,6 +150,7 @@
         <option value="$PROJECT_DIR$/collections/collections.js" />
         <option value="$PROJECT_DIR$/client/router.js" />
         <option value="$PROJECT_DIR$/client/views/dashboard.js" />
+        <option value="$PROJECT_DIR$/client/views/dashboard.html" />
       </list>
     </option>
   </component>
@@ -220,6 +227,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swipe-app-meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swipe-app-meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -229,7 +250,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="options.lastSelected" value="preferences.sourceCode" />
     <property name="JavaScriptLanguageLevel" value="ES5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/packages" />
     <property name="FullScreen" value="false" />
@@ -413,11 +434,6 @@
         <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="26" selection-start="241" selection-end="241" vertical-scroll-proportion="0.256917" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/swipescreen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="33" selection-start="761" selection-end="761" vertical-scroll-proportion="0.51819074">
@@ -434,6 +450,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="3" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/collections.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="26" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="54" selection-start="1557" selection-end="1557" vertical-scroll-proportion="0.0">
@@ -441,9 +478,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.js">
+    <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="3" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
+        <state line="9" column="25" selection-start="104" selection-end="104" vertical-scroll-proportion="0.048295453">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="47" selection-start="554" selection-end="554" vertical-scroll-proportion="-11.769231">
           <folding />
         </state>
       </provider>
@@ -457,28 +501,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/publications.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="2" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collections/collections.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="73" selection-start="363" selection-end="363" vertical-scroll-proportion="0.13545817">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="73" selection-start="649" selection-end="649" vertical-scroll-proportion="0.24757281">
+        <state line="25" column="22" selection-start="492" selection-end="492" vertical-scroll-proportion="0.40246212">
           <folding />
         </state>
       </provider>

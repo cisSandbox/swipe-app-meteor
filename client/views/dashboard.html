@@ -1,5 +1,9 @@
 <template name="dashboard">
     <h1>Dashboard</h1>
+    <h2>
+        Hello,
+        {{currentUser.profile.name}}
+    </h2>
     {{{showDynamicContent}}}
     <button class="btn btn-danger" id="logout">Logout</button>
 </template>

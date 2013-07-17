@@ -6,15 +6,12 @@
 
  */
 
+Template.dashboard.currentUser = function() {
+    return Meteor.user();
+};
+
 Template.dashboard.showDynamicContent = function() {
-    var roles = Meteor.user().roles;
-    if (jQuery.inArray('admin', roles) > -1) {
-        Session.set('innerTemplate', 'admindashboard');
-    } else if (jQuery.inArray('professor', roles)  > -1) {
-        Session.set('innerTemplate', 'professordashboard');
-    } else if (jQuery.inArray('tutor', roles)  > -1) {
-        Session.set('innerTemplate', 'tutordashboard');
-    }
+    Session.set('innerTemplate', Meteor.user().roles[0] + 'dashboard');
     return Template[Session.get("innerTemplate")]();
 };
 
