@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" name="Default" comment="˚">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/dashboard.html" afterPath="$PROJECT_DIR$/client/views/dashboard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/dashboard.js" afterPath="$PROJECT_DIR$/client/views/dashboard.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/lib/methods.js" afterPath="$PROJECT_DIR$/server/lib/methods.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="swipe-app-meteor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,7 +20,7 @@
     <file path="/a.dummy" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374089759759" ignored="false" />
     <file path="$USER_HOME$/Dropbox/Doc/Emails/Tips-7-16/tips.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374096403630" ignored="false" />
     <file path="/tips.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374092964067" ignored="false" />
-    <file path="/dashboard.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374107045162" ignored="false" />
+    <file path="/dashboard.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374107580624" ignored="false" />
     <file path="/dashboard.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374106752146" ignored="false" />
     <file path="$PROJECT_DIR$/../aycl-landing-pages/index.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374078786956" ignored="false" />
     <file path="/index.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374078785709" ignored="false" />
@@ -44,10 +44,8 @@
     <file path="/plain_text.txt" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374093746889" ignored="false" />
     <file path="$PROJECT_DIR$/../../../Shared/uiedev/htdocs/uie/articles/hiring_a_ux_pro.php" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374095578752" ignored="false" />
     <file path="/collections.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374104523257" ignored="false" />
-    <file path="/methods.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374106651151" ignored="false" />
-    <file path="$PROJECT_DIR$/.meteor/local/build/app/packages/accounts-base/accounts_common.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374106565754" ignored="false" />
+    <file path="/methods.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374107707221" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/accounts-base/accounts_client.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374106565754" ignored="false" />
-    <file path="$PROJECT_DIR$/.meteor/local/build/app/packages/accounts-base/accounts_server.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374106565754" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,7 @@
           <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/router.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="33" column="99" selection-start="1286" selection-end="1369" vertical-scroll-proportion="0.0">
+                <state line="15" column="64" selection-start="410" selection-end="417" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -126,7 +124,7 @@
           <file leaf-file-name="mainuser.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/server/mainuser.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="2" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
+                <state line="0" column="0" selection-start="0" selection-end="534" vertical-scroll-proportion="0.0">
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -146,7 +144,7 @@
           <file leaf-file-name="methods.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/server/lib/methods.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="16" selection-start="275" selection-end="275" vertical-scroll-proportion="0.13140097">
+                <state line="3" column="17" selection-start="122" selection-end="122" vertical-scroll-proportion="0.04927536">
                   <folding />
                 </state>
               </provider>
@@ -159,7 +157,7 @@
           <file leaf-file-name="dashboard.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="47" column="77" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.6344498">
+                <state line="35" column="17" selection-start="835" selection-end="835" vertical-scroll-proportion="0.37416267">
                   <folding />
                 </state>
               </provider>
@@ -194,8 +192,9 @@
         <option value="$PROJECT_DIR$/client/application.js" />
         <option value="$PROJECT_DIR$/server/publications.js" />
         <option value="$PROJECT_DIR$/collections/collections.js" />
-        <option value="$PROJECT_DIR$/server/lib/methods.js" />
         <option value="$PROJECT_DIR$/client/views/dashboard.html" />
+        <option value="$PROJECT_DIR$/server/mainuser.js" />
+        <option value="$PROJECT_DIR$/server/lib/methods.js" />
         <option value="$PROJECT_DIR$/client/views/dashboard.js" />
       </list>
     </option>
@@ -527,39 +526,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="99" selection-start="1286" selection-end="1369" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/publications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="3" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/mainuser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="2" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/methods.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collections/collections.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -578,16 +547,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="64" selection-start="410" selection-end="417" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/publications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="3" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/mainuser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="534" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/collections.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="0" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/lib/methods.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="16" selection-start="275" selection-end="275" vertical-scroll-proportion="0.13140097">
+        <state line="3" column="17" selection-start="122" selection-end="122" vertical-scroll-proportion="0.04927536">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="77" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.6344498">
+        <state line="35" column="17" selection-start="835" selection-end="835" vertical-scroll-proportion="0.37416267">
           <folding />
         </state>
       </provider>

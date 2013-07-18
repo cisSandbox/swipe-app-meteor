@@ -1,13 +1,11 @@
 Meteor.methods({
     adminCreateUser: function(user, role) {
-        Accounts.createUser(user);
+        var id = Accounts.createUser(user);
         Roles.addUsersToRoles(id, role);
     },
     adminRemoveUser: function(userId) {
-        if (this.id !== userId) {
+        if (this.userId !== userId) {
             Meteor.users.remove(userId);
-        } else {
-            Meteor.Error.throw('Cannot delete yourself');
         }
     }
 });
