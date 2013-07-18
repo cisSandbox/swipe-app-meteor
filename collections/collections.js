@@ -15,25 +15,25 @@ WorkVisits    = new Meteor.Collection('workvisits');
 
 WorkVisits.allow({
     insert: function(userId) {
-        return (Roles.userIsInRole(userId, 'admin') || Roles.userIsInRole(userId, 'tutor'));
+        return (Roles.userIsInRole(userId, ['admin', 'tutor']));
     },
     update: function(userId) {
-        return (Roles.userIsInRole(userId, 'admin') || Roles.userIsInRole(userId, 'tutor'));
+        return (Roles.userIsInRole(userId, ['admin', 'tutor']));
     },
     remove: function(userId) {
-        return (Roles.userIsInRole(userId, 'admin'));
+        return (Roles.userIsInRole(userId, ['admin', 'tutor']));
     }
 });
 
 Visits.allow({
     insert: function(userId) {
-        return (Roles.userIsInRole(userId, 'admin') || Roles.userIsInRole(userId, 'tutor') || Roles.userIsInRole(userId, 'frontScreen'));
+        return (Roles.userIsInRole(userId, ['admin', 'tutor', 'frontScreen']));
     },
     update: function(userId) {
-        return (Roles.userIsInRole(userId, 'admin') || Roles.userIsInRole(userId, 'tutor') || Roles.userIsInRole(userId, 'frontScreen'));
+        return (Roles.userIsInRole(userId, ['admin', 'tutor', 'frontScreen']));
     },
     remove: function(userId) {
-        return (Roles.userIsInRole(userId, 'admin') || Roles.userIsInRole(userId, 'tutor') || Roles.userIsInRole(userId, 'frontScreen'));
+        return (Roles.userIsInRole(userId, ['admin', 'tutor', 'frontScreen']));
     }
 });
 
@@ -63,13 +63,13 @@ Courses.allow({
 
 TutoredVisits.allow({
     insert: function(userId) {
-        return (Roles.userIsInRole(userId, 'admin') || Roles.userIsInRole(userId, 'tutor'));
+        return (Roles.userIsInRole(userId, ['admin', 'tutor']));
     },
     update: function(userId) {
-        return (Roles.userIsInRole(userId, 'admin') || Roles.userIsInRole(userId, 'tutor'));
+        return (Roles.userIsInRole(userId, ['admin', 'tutor']));
     },
     remove: function(userId) {
-        return (Roles.userIsInRole(userId, 'admin') || Roles.userIsInRole(userId, 'tutor'));
+        return (Roles.userIsInRole(userId, ['admin', 'tutor']));
     }
 });
 

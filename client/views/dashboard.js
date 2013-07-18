@@ -42,3 +42,20 @@ Template.tutordashboard.events({
 Template.admindashboard.users = function() {
     return Meteor.users.find();
 };
+
+Template.createuser.roles = function() {
+    return Meteor.roles.find();
+};
+
+Template.createuser.events({
+    'click #inputSubmit': function(e, t) {
+        e.preventDefault();
+        console.log('click');
+        var email     = t.find('#inputEmail').value,
+            name      = t.find('#inputName').value,
+            shortname = t.find('#inputShortname').value,
+            password  = t.find('#inputPassword').value,
+            role      = t.find('#inputRole').value;
+        Meteor.call('adminCreateUser', {email: email, password: password, profile: {name: name, shortname: shortname}}, role);
+    }
+});
