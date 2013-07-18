@@ -4,6 +4,10 @@ Meteor.methods({
         Roles.addUsersToRoles(id, role);
     },
     adminRemoveUser: function(userId) {
-        
+        if (this.id !== userId) {
+            Meteor.users.remove(userId);
+        } else {
+            Meteor.Error.throw('Cannot delete yourself');
+        }
     }
 });

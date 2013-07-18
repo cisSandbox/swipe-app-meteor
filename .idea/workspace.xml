@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" name="Default" comment="˚">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/methods.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/lib/methods.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/application.js" afterPath="$PROJECT_DIR$/client/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/collections.js" afterPath="$PROJECT_DIR$/collections/collections.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/dashboard.html" afterPath="$PROJECT_DIR$/client/views/dashboard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/dashboard.js" afterPath="$PROJECT_DIR$/client/views/dashboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publications.js" afterPath="$PROJECT_DIR$/server/publications.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/lib/methods.js" afterPath="$PROJECT_DIR$/server/lib/methods.js" />
     </list>
     <ignored path="swipe-app-meteor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,8 +20,8 @@
     <file path="/a.dummy" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374089759759" ignored="false" />
     <file path="$USER_HOME$/Dropbox/Doc/Emails/Tips-7-16/tips.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374096403630" ignored="false" />
     <file path="/tips.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374092964067" ignored="false" />
-    <file path="/dashboard.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374106225696" ignored="false" />
-    <file path="/dashboard.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374103390204" ignored="false" />
+    <file path="/dashboard.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374107045162" ignored="false" />
+    <file path="/dashboard.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374106752146" ignored="false" />
     <file path="$PROJECT_DIR$/../aycl-landing-pages/index.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374078786956" ignored="false" />
     <file path="/index.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374078785709" ignored="false" />
     <file path="$PROJECT_DIR$/../aycl-landing-pages/sass/screen.scss" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374079012234" ignored="false" />
@@ -49,7 +44,10 @@
     <file path="/plain_text.txt" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374093746889" ignored="false" />
     <file path="$PROJECT_DIR$/../../../Shared/uiedev/htdocs/uie/articles/hiring_a_ux_pro.php" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374095578752" ignored="false" />
     <file path="/collections.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374104523257" ignored="false" />
-    <file path="/methods.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374106352094" ignored="false" />
+    <file path="/methods.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374106651151" ignored="false" />
+    <file path="$PROJECT_DIR$/.meteor/local/build/app/packages/accounts-base/accounts_common.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374106565754" ignored="false" />
+    <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/accounts-base/accounts_client.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374106565754" ignored="false" />
+    <file path="$PROJECT_DIR$/.meteor/local/build/app/packages/accounts-base/accounts_server.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374106565754" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +90,7 @@
           <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/dashboard.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="85" column="60" selection-start="2709" selection-end="2709" vertical-scroll-proportion="-31.76923">
+                <state line="14" column="11" selection-start="460" selection-end="460" vertical-scroll-proportion="-9.153846">
                   <folding />
                 </state>
               </provider>
@@ -145,10 +143,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="methods.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="methods.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/server/lib/methods.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="6" column="8" selection-start="192" selection-end="192" vertical-scroll-proportion="0.09855072">
+                <state line="8" column="16" selection-start="275" selection-end="275" vertical-scroll-proportion="0.13140097">
                   <folding />
                 </state>
               </provider>
@@ -158,10 +156,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="dashboard.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="dashboard.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="58" column="0" selection-start="1508" selection-end="1508" vertical-scroll-proportion="0.845933">
+                <state line="47" column="77" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.6344498">
                   <folding />
                 </state>
               </provider>
@@ -195,10 +193,10 @@
         <option value="$PROJECT_DIR$/client/router.js" />
         <option value="$PROJECT_DIR$/client/application.js" />
         <option value="$PROJECT_DIR$/server/publications.js" />
-        <option value="$PROJECT_DIR$/client/views/dashboard.html" />
         <option value="$PROJECT_DIR$/collections/collections.js" />
-        <option value="$PROJECT_DIR$/client/views/dashboard.js" />
         <option value="$PROJECT_DIR$/server/lib/methods.js" />
+        <option value="$PROJECT_DIR$/client/views/dashboard.html" />
+        <option value="$PROJECT_DIR$/client/views/dashboard.js" />
       </list>
     </option>
   </component>
@@ -410,7 +408,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881773" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1459893" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1459893" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986766" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -522,13 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="26" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="3" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
@@ -539,13 +530,6 @@
     <entry file="file://$PROJECT_DIR$/client/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="99" selection-start="1286" selection-end="1369" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="60" selection-start="2709" selection-end="2709" vertical-scroll-proportion="-31.76923">
           <folding />
         </state>
       </provider>
@@ -580,16 +564,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
+    <entry file="file://$PROJECT_DIR$/client/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1508" selection-end="1508" vertical-scroll-proportion="0.845933">
+        <state line="14" column="26" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="11" selection-start="460" selection-end="460" vertical-scroll-proportion="-9.153846">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/lib/methods.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="8" selection-start="192" selection-end="192" vertical-scroll-proportion="0.09855072">
+        <state line="8" column="16" selection-start="275" selection-end="275" vertical-scroll-proportion="0.13140097">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="77" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.6344498">
           <folding />
         </state>
       </provider>

@@ -43,6 +43,16 @@ Template.admindashboard.users = function() {
     return Meteor.users.find();
 };
 
+Template.userstable.events({
+    'click #deleteUser': function() {
+        var confirm = window.confirm('Are you sure? This cannot be undone.');
+        if (confirm) {
+            Meteor.call('adminRemoveUser', this._id);
+        }
+    }
+});
+
+
 Template.createuser.roles = function() {
     return Meteor.roles.find();
 };
