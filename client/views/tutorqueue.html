@@ -1,6 +1,6 @@
 <template name="tutorqueue">
     <h1>Tutor Queue</h1>
-    {{#if students}}
+    {{#if needHelpStudents}}
     <table class="table table-striped">
         <thead>
             <th>Name</th>
@@ -22,7 +22,7 @@
 
 <template name="needhelp">   
     <td>{{name}}</td>
-    <td>{{timeDiff}}</td>
+    <td>{{timeDiff}} minutes</td>
     <td>
         <button class="btn btn-success"><i class="icon-pencil icon-white"></i> Tutor Form</button>
     </td>    

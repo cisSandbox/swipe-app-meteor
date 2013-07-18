@@ -1,6 +1,6 @@
 <template name="tapoutqueue">
     <h1>Tap Out</h1>
-    {{#if students}}
+    {{#if signedInStudents}}
     <table class="table table-striped">
     	<thead>
     		<th>Name</th>
@@ -22,7 +22,7 @@
 
 <template name="student">   
     <td>{{name}}</td>
-    <td>{{timeDiff}}</td>
+    <td>{{timeDiff}} minutes</td>
     <td>
     	<button class="btn btn-danger">Leave</button>
     </td>    
