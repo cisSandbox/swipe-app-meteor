@@ -1,3 +1,4 @@
+<!-- MAIN TEMPLATE -->
 <template name="dashboard">
     <h1>Dashboard</h1>
     <h2>
@@ -8,12 +9,49 @@
     <button class="btn btn-danger" id="logout">Logout</button>
 </template>
 
+<!-- MAIN TUTOR DASHBOARD TEMPLATE -->
 <template name="tutordashboard">
+    {{> edituser}}
 	<button class="btn {{#if currentlyTutoring}}btn-danger{{else}}btn-success{{/if}}" id="tutorButton">
         {{#if currentlyTutoring}}Stop Working{{else}}Start Working{{/if}}
     </button>
 </template>
 
+<!-- TUTOR EDIT USER TEMPLATE -->
+<template name="edituser">
+    <h3>Edit User Data</h3>
+    <form class="form-horizontal" id="editUserForm">
+        <!-- IMAGE UPLOAD SHOULD GO HERE -->
+        <div class="control-group">
+            <label class="control-label" for="editUserName">Name</label>
+            <div class="controls">
+                <input type="text" id="editUserName" placeholder="Name" value="{{currentUser.profile.name}}">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="editCourses">Courses</label>
+            <div class="controls">
+                <select multiple="multiple" id="editCourses">
+                    {{#each courses}}
+                        {{> courseselect}}
+                    {{/each}}
+                </select>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <button type="submit" class="btn btn-primary" id="editUserSubmit">Save</button>
+            </div>
+        </div>
+    </form>
+</template>
+
+<!-- TUTOR SELECT TEMPLATE -->
+<template name="courseselect">
+    <option value="{{abbr}}">{{abbr}}</option>
+</template>
+
+<!-- MAIN ADMIN DASHBOARD TEMPLATE -->
 <template name="admindashboard">
     <table class="table table-bordered">
         <thead>
@@ -31,6 +69,7 @@
     {{> createuser}}
 </template>
 
+<!-- ADMIN USERS TABLE TEMPLATE -->
 <template name="userstable">
     <tr>
         <td>{{_id}}</td>
@@ -45,31 +84,32 @@
     </tr>
 </template>
 
+<!-- ADMIN CREATE USER TEMPLATE -->
 <template name="createuser">
-    <h2>Create New User</h2>
-    <form class="form-horizontal">
+    <h3>Create New User</h3>
+    <form class="form-horizontal" id="createUserForm">
         <div class="control-group">
-            <label class="control-label" for="inputEmail">Email</label>
+            <label class="control-label" for="createUserEmail">Email</label>
             <div class="controls">
-                <input type="text" id="inputEmail" placeholder="Email">
+                <input type="text" id="createUserEmail" placeholder="Email">
             </div>
         </div>
         <div class="control-group">
-            <label class="control-label" for="inputShortname">Shortname</label>
+            <label class="control-label" for="createUserShortname">Shortname</label>
             <div class="controls">
-                <input type="text" id="inputShortname" placeholder="Shortname">
+                <input type="text" id="createUserShortname" placeholder="Shortname">
             </div>
         </div>
         <div class="control-group">
-            <label class="control-label" for="inputName">Name</label>
+            <label class="control-label" for="createUserName">Name</label>
             <div class="controls">
-                <input type="text" id="inputName" placeholder="Name">
+                <input type="text" id="createUserName" placeholder="Name">
             </div>
         </div>
         <div class="control-group">
-            <label class="control-label" for="inputRole">Role</label>
+            <label class="control-label" for="createUserRole">Role</label>
             <div class="controls">
-                <select id="inputRole">
+                <select id="createUserRole">
                     {{#each roles}}
                     <option value="{{name}}">{{name}}</option>
                     {{/each}}
@@ -77,17 +117,18 @@
             </div>
         </div>
         <div class="control-group">
-            <label class="control-label" for="inputPassword">Password</label>
+            <label class="control-label" for="createUserPassword">Password</label>
             <div class="controls">
-                <input type="password" id="inputPassword" placeholder="Password">
+                <input type="password" id="createUserPassword" placeholder="Password">
             </div>
         </div>
         <div class="control-group">
             <div class="controls">
-                <button type="submit" class="btn btn-success" id="inputSubmit">Submit</button>
+                <button type="submit" class="btn btn-success" id="createUserSubmit">Submit</button>
             </div>
         </div>
     </form>
 </template>
 
+<!-- MAIN PROFESSORS DASHBOARD -->
 <template name="professordashboard"></template>
