@@ -31,7 +31,15 @@ Template.tutordashboard.currentlyTutoring = function() {
 };
 
 Template.edituser.courses = function() {
-    return Courses.find();
+    var courses = [];
+    _.each(Courses.find().fetch(), function(course) {
+        if (_.contains(Meteor.user().profile.canTutor, course.abbr)) {
+            courses.push({abbr: course.abbr, selected: true});
+        } else {
+            courses.push({abbr: course.abbr});
+        }
+    });
+    return courses;
 };
 
 Template.tutordashboard.events({
@@ -47,9 +55,9 @@ Template.tutordashboard.events({
 Template.edituser.events({
     'click #editUserSubmit': function(e, t) {
         e.preventDefault();
+        console.log(t.find('#editCourses'));
         var name    = t.find('#editUserName').value,
             courses = $(t.find('#editCourses')).val();
-        console.log(courses);
         Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.name': name, 'profile.canTutor': courses}});
         alert('Profile Updated');
     }

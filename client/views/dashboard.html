@@ -48,7 +48,7 @@
 
 <!-- TUTOR SELECT TEMPLATE -->
 <template name="courseselect">
-    <option value="{{abbr}}">{{abbr}}</option>
+    <option {{#if selected}}}selected{{/if}} value="{{abbr}}">{{abbr}}</option>
 </template>
 
 <!-- MAIN ADMIN DASHBOARD TEMPLATE -->
