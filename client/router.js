@@ -24,11 +24,11 @@ Meteor.Router.filters({
         if (Meteor.user()) {
             if (Roles.userIsInRole(Meteor.userId(), 'admin')) {
                 goto = page;
-            } else if (Roles.userIsInRole(Meteor.userId(), 'frontScreen') && jQuery.inArray(page, frontScreenPages) > -1) {
+            } else if (Roles.userIsInRole(Meteor.userId(), 'frontScreen') && _.contains(frontScreenPages, page)) {
                 goto = page;
-            } else if (Roles.userIsInRole(Meteor.userId(), 'professor') && jQuery.inArray(page, professorPages) > -1) {
+            } else if (Roles.userIsInRole(Meteor.userId(), 'professor') && _.contains(frontScreenPages, page)) {
                 goto = page;
-            } else if (Roles.userIsInRole(Meteor.userId(), 'tutor') && jQuery.inArray(page, tutorPages) > -1) {
+            } else if (Roles.userIsInRole(Meteor.userId(), 'tutor') && _.contains(frontScreenPages, page)) {
                 goto = page;
             } else {
                 Meteor.Errors.throw('You do not have permission to access the ' + page + ' page.');

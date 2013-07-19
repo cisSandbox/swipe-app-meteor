@@ -13,14 +13,14 @@ Template.swipescreen.showDynamicContent = function() {
 };
 
 Template.currenttutors.tutors = function() {
-    var workVisits = WorkVisits.find({timeOut: null});
-    var users = Meteor.users.find();
-    var tutorsOnDuty = [];
-    if(workVisits) {
+    var workVisits = WorkVisits.find({timeOut: null}),
+        users = Meteor.users.find(),
+        tutorsOnDuty = [];
+    if (workVisits) {
         workVisits.forEach(function(workVisit) {
             users.forEach(function(user) {
-                if(workVisit.tutorId === user._id) {
-                   tutorsOnDuty.push(user);
+                if (workVisit.tutorId === user._id) {
+                    tutorsOnDuty.push(user);
                 }
             });
         });
@@ -29,25 +29,21 @@ Template.currenttutors.tutors = function() {
     return tutorsOnDuty;
 };
 
-Template.useridentry.rendered = function() {
-    $(this.find('#student-id-entry')).focus();
-};
-
 Template.useridentry.events = {
     'keypress #student-id-entry': function(e) {
         e.preventDefault();
         var character = String.fromCharCode(e.which);
-        if(reg.test(character)) {
+        if (reg.test(character)) {
             e.target.value += character;
         }
         // handle if user is found
-        if(e.target.value.length === 8) {
-            if(Visits.find({universityID: e.target.value, timeOut: null}).count() > 0){
+        if (e.target.value.length === 8) {
+            if (Visits.find({universityID: e.target.value, timeOut: null}).count() > 0){
                 Meteor.Errors.throw('Student already swiped in');
                 e.target.value = '';
             } else {
                 var s = Students.findOne({universityID: e.target.value});
-                if(s) {
+                if (s) {
                     student = s;
                     Session.set("innerTemplate", "studenthelp");
                 } else {
@@ -69,7 +65,6 @@ Template.studenthelp.tutor = function() {
 
 Template.studenthelp.events({
     'click #noHelp': function() {
-        console.log('no help');
         Visits.insert({name: student.name, timeIn: new Date(), timeOut: null, needHelp: false, universityID: student.universityID});
         location.reload();
     },
