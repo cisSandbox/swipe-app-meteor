@@ -31,11 +31,9 @@
         <div class="control-group">
             <label class="control-label" for="editCourses">Courses</label>
             <div class="controls">
-                <select multiple="multiple" id="editCourses">
-                    {{#each courses}}
-                        {{> courseselect}}
-                    {{/each}}
-                </select>
+                {{#each courses}}
+                    {{> courseselect}}
+                {{/each}}
             </div>
         </div>
         <div class="control-group">
@@ -48,7 +46,9 @@
 
 <!-- TUTOR SELECT TEMPLATE -->
 <template name="courseselect">
-    <option {{#if selected}}}selected{{/if}} value="{{abbr}}">{{abbr}}</option>
+    <label class="checkbox inline">
+        <input type="checkbox" class="canTutor" id="inlineCheckbox{{abbr}}" {{#if selected}}}checked{{/if}} value="{{abbr}}"> {{abbr}}
+    </label>
 </template>
 
 <!-- MAIN ADMIN DASHBOARD TEMPLATE -->
