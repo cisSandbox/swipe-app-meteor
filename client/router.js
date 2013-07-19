@@ -26,10 +26,16 @@ Meteor.Router.filters({
                 goto = page;
             } else if (Roles.userIsInRole(Meteor.userId(), 'frontScreen') && _.contains(frontScreenPages, page)) {
                 goto = page;
-            } else if (Roles.userIsInRole(Meteor.userId(), 'professor') && _.contains(frontScreenPages, page)) {
+            } else if (Roles.userIsInRole(Meteor.userId(), 'professor') && _.contains(professorPages, page)) {
                 goto = page;
-            } else if (Roles.userIsInRole(Meteor.userId(), 'tutor') && _.contains(frontScreenPages, page)) {
-                goto = page;
+            } else if (Roles.userIsInRole(Meteor.userId(), 'tutor') && _.contains(tutorPages, page)) {
+                // This is realllllly convoluted. I should fix it.
+                var v = !WorkVisits.findOne({tutorId: Meteor.userId(), timeOut: null});
+                if (page === 'tutorform' && v) {
+                    goto = 'login';
+                } else {
+                    goto = page;
+                }
             } else {
                 Meteor.Errors.throw('You do not have permission to access the ' + page + ' page.');
                 goto = 'login';

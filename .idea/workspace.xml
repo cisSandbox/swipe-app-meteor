@@ -3,14 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" name="Default" comment="˚">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/router.js" afterPath="$PROJECT_DIR$/client/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/swipescreen.html" afterPath="$PROJECT_DIR$/client/views/swipescreen.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/swipescreen.js" afterPath="$PROJECT_DIR$/client/views/swipescreen.js" />
     </list>
     <ignored path="swipe-app-meteor.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374239255105" ignored="false" />
     <file path="/index.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1373932260110" ignored="false" />
-    <file path="/router.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374258066020" ignored="false" />
+    <file path="/router.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374262676840" ignored="false" />
     <file path="/swipescreen.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374251109290" ignored="false" />
     <file path="/swipescreen.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374258356992" ignored="false" />
     <file path="/publications.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374249323593" ignored="false" />
@@ -70,10 +69,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="router.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/router.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="13" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0">
+                <state line="31" column="66" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.6458333">
                   <folding />
                 </state>
               </provider>
@@ -115,10 +114,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="swipescreen.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="swipescreen.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/swipescreen.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="59" column="2" selection-start="1727" selection-end="1727" vertical-scroll-proportion="0.48701298">
+                <state line="15" column="54" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -164,10 +163,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="dashboard.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="dashboard.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="48" column="41" selection-start="1197" selection-end="1197" vertical-scroll-proportion="1.2680413">
+                <state line="48" column="41" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="tutorform.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/views/tutorform.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -203,9 +211,9 @@
         <option value="$PROJECT_DIR$/server/publications.js" />
         <option value="$PROJECT_DIR$/client/views/dashboard.js" />
         <option value="$PROJECT_DIR$/collections/collections.js" />
-        <option value="$PROJECT_DIR$/client/router.js" />
         <option value="$PROJECT_DIR$/client/views/swipescreen.html" />
         <option value="$PROJECT_DIR$/client/views/swipescreen.js" />
+        <option value="$PROJECT_DIR$/client/router.js" />
       </list>
     </option>
   </component>
@@ -330,7 +338,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32908162" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908162" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986766" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -410,13 +418,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/router/lib/router_client.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="178" column="28" selection-start="5549" selection-end="5555" vertical-scroll-proportion="0.845805" />
@@ -460,7 +461,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="41" selection-start="1197" selection-end="1197" vertical-scroll-proportion="1.2680413">
+        <state line="48" column="41" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -493,13 +494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="13" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/swipescreen.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="29" selection-start="286" selection-end="286" vertical-scroll-proportion="-8.125">
@@ -509,7 +503,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/swipescreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="2" selection-start="1727" selection-end="1727" vertical-scroll-proportion="0.48701298">
+        <state line="15" column="54" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/tutorform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="66" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.6458333">
           <folding />
         </state>
       </provider>

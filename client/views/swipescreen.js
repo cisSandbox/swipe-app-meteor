@@ -25,7 +25,6 @@ Template.currenttutors.tutors = function() {
             });
         });
     }
-    console.log(tutorsOnDuty);
     return tutorsOnDuty;
 };
 
@@ -38,7 +37,7 @@ Template.useridentry.events = {
         }
         // handle if user is found
         if (e.target.value.length === 8) {
-            if (Visits.find({universityID: e.target.value, timeOut: null}).count() > 0){
+            if (Visits.find({universityID: e.target.value, timeOut: null}).count() > 0) {
                 Meteor.Errors.throw('Student already swiped in');
                 e.target.value = '';
             } else {
@@ -69,7 +68,6 @@ Template.studenthelp.events({
         location.reload();
     },
     'click #needHelp': function() {
-        console.log('need help');
         Session.set("innerTemplate", "courseselection");
     }
 });
@@ -80,7 +78,6 @@ Template.courseselection.courses = function() {
 
 Template.courseselection.events({
     'click button': function(e) {
-        console.log(e.target.value);
         Visits.insert({name: student.name, timeIn: new Date(), timeOut: null, needHelp: true, course: e.target.value});
         location.reload();
     }
