@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" name="Default" comment="˚">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/router.js" afterPath="$PROJECT_DIR$/client/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/swipescreen.js" afterPath="$PROJECT_DIR$/client/views/swipescreen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/collections.js" afterPath="$PROJECT_DIR$/collections/collections.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/tutorqueue.js" afterPath="$PROJECT_DIR$/client/views/tutorqueue.js" />
     </list>
     <ignored path="swipe-app-meteor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,10 +69,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="router.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/router.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="31" column="66" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.6458333">
+                <state line="8" column="37" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -96,11 +96,13 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/application.js">
+          <file leaf-file-name="tutorqueue.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/views/tutorqueue.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="26" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
-                  <folding />
+                <state line="15" column="2" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -141,10 +143,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="collections.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="collections.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/collections/collections.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="0" selection-start="660" selection-end="660" vertical-scroll-proportion="0.0">
+                <state line="32" column="79" selection-start="904" selection-end="904" vertical-scroll-proportion="0.5416667">
                   <folding />
                 </state>
               </provider>
@@ -163,19 +165,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="dashboard.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="dashboard.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="48" column="41" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.0">
+                <state line="48" column="41" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.84791386">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="tutorform.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="tutorform.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/tutorform.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
                   <folding />
                 </state>
               </provider>
@@ -210,10 +212,11 @@
         <option value="$PROJECT_DIR$/client/views/dashboard.html" />
         <option value="$PROJECT_DIR$/server/publications.js" />
         <option value="$PROJECT_DIR$/client/views/dashboard.js" />
-        <option value="$PROJECT_DIR$/collections/collections.js" />
         <option value="$PROJECT_DIR$/client/views/swipescreen.html" />
         <option value="$PROJECT_DIR$/client/views/swipescreen.js" />
         <option value="$PROJECT_DIR$/client/router.js" />
+        <option value="$PROJECT_DIR$/client/views/tutorqueue.js" />
+        <option value="$PROJECT_DIR$/collections/collections.js" />
       </list>
     </option>
   </component>
@@ -418,11 +421,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/packages/router/lib/router_client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="28" selection-start="5549" selection-end="5555" vertical-scroll-proportion="0.845805" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" />
@@ -445,44 +443,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/publications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="43" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/mainuser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="41" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="16" selection-start="1927" selection-end="1927" vertical-scroll-proportion="-35.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="26" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collections/collections.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="660" selection-end="660" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -517,7 +480,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="66" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.6458333">
+        <state line="8" column="37" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="26" selection-start="268" selection-end="268" vertical-scroll-proportion="0.16371077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="16" selection-start="1927" selection-end="1927" vertical-scroll-proportion="-35.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/tutorqueue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="2" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/publications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="43" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/collections.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="79" selection-start="904" selection-end="904" vertical-scroll-proportion="0.5416667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="41" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.84791386">
           <folding />
         </state>
       </provider>

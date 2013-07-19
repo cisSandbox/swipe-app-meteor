@@ -30,7 +30,7 @@ Visits.allow({
         return (Roles.userIsInRole(userId, ['admin', 'tutor', 'frontScreen']));
     },
     update: function(userId) {
-        return (Roles.userIsInRole(userId, 'admin'));
+        return (Roles.userIsInRole(userId, ['admin', 'tutor', 'frontScreen']));
     },
     remove: function(userId) {
         return (Roles.userIsInRole(userId, 'admin'));
