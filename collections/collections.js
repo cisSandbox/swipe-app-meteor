@@ -21,7 +21,7 @@ WorkVisits.allow({
         return (Roles.userIsInRole(userId, ['admin', 'tutor']));
     },
     remove: function(userId) {
-        return (Roles.userIsInRole(userId, ['admin', 'tutor']));
+        return (Roles.userIsInRole(userId, 'admin'));
     }
 });
 

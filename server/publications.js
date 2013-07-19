@@ -23,8 +23,11 @@ Meteor.publish('tutoredVisits', function() {
 });
 
 Meteor.publish('workVisits', function() {
-    if (this.userId) {
+    if (Roles.userIsInRole(this.userId, ['admin', 'frontScreen'])) {
         return WorkVisits.find();
+    }
+    if (Roles.userIsInRole(this.userId, 'tutor')) {
+        return WorkVisits.find({tutorId: this.userId});
     }
 });
 

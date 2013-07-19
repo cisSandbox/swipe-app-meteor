@@ -44,7 +44,8 @@ Template.edituser.courses = function() {
 
 Template.tutordashboard.events({
     'click #tutorButton': function() {
-        if (WorkVisits.findOne({tutorId: Meteor.userId(), timeOut: null})) {
+        var visit = WorkVisits.findOne({tutorId: Meteor.userId(), timeOut: null});
+        if (visit) {
             WorkVisits.update({_id: visit._id}, {$set: {timeOut: new Date()}});
         } else {
             WorkVisits.insert({tutorId: Meteor.userId(), timeIn: new Date(), timeOut: null});
