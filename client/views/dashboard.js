@@ -39,7 +39,6 @@ Template.edituser.courses = function() {
             courses.push({abbr: course.abbr});
         }
     });
-    console.log('courses: ' + courses);
     return courses;
 };
 
