@@ -30,10 +30,10 @@ Visits.allow({
         return (Roles.userIsInRole(userId, ['admin', 'tutor', 'frontScreen']));
     },
     update: function(userId) {
-        return (Roles.userIsInRole(userId, ['admin', 'tutor', 'frontScreen']));
+        return (Roles.userIsInRole(userId, 'admin'));
     },
     remove: function(userId) {
-        return (Roles.userIsInRole(userId, ['admin', 'tutor', 'frontScreen']));
+        return (Roles.userIsInRole(userId, 'admin'));
     }
 });
 
@@ -66,10 +66,10 @@ TutoredVisits.allow({
         return (Roles.userIsInRole(userId, ['admin', 'tutor']));
     },
     update: function(userId) {
-        return (Roles.userIsInRole(userId, ['admin', 'tutor']));
+        return (Roles.userIsInRole(userId, 'admin'));
     },
     remove: function(userId) {
-        return (Roles.userIsInRole(userId, ['admin', 'tutor']));
+        return (Roles.userIsInRole(userId, 'admin'));
     }
 });
 
