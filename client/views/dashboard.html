@@ -9,9 +9,11 @@
             <div class="span3 background-gray">
                 <h4>Quick Links</h4>
                 <br />
+                {{#if canTutor}}}
                 <button class="btn btn-large btn-block {{#if currentlyTutoring}}btn-danger{{else}}btn-success{{/if}}" id="tutorButton">
                     {{#if currentlyTutoring}}Stop Working{{else}}Start Working{{/if}}
                 </button>
+                {{/if}}
                 <button class="btn btn-large btn-block btn-primary" id="tutorqueue">Tutor Queue</button>
                 <button class="btn btn-large btn-block btn-danger" id="logout">Logout</button>
                 <br />
@@ -33,8 +35,7 @@
         </ul>
         <div class="tab-content background-gray">
             <div class="tab-pane active" id="tab1">
-                <h2>My Profile</h2>
-                {{> edituser}}
+                {{> profile}}
             </div>
             <div class="tab-pane" id="tab2">
                 <h2>My Hours</h2>
@@ -44,6 +45,11 @@
             </div>
         </div>
     </div>
+</template>
+
+<template name="profile">
+    <h2>My Profile</h2>
+    {{> edituser}}
 </template>
 
 <!-- TUTOR EDIT USER TEMPLATE -->
@@ -81,6 +87,29 @@
 
 <!-- MAIN ADMIN DASHBOARD TEMPLATE -->
 <template name="admindashboard">
+    <div class="tabbable"> <!-- Only required for left/right tabs -->
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab1" data-toggle="tab">My Profile</a></li>
+            <li><a href="#tab2" data-toggle="tab">Edit Users</a></li>
+            <li><a href="#tab3" data-toggle="tab">Add New User</a></li>
+        </ul>
+        <div class="tab-content background-gray">
+            <div class="tab-pane active" id="tab1">
+                {{> profile}}
+            </div>
+            <div class="tab-pane" id="tab2">
+                {{> editusers}}
+            </div>
+            <div class="tab-pane" id="tab3">
+                {{> createuser}}
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- MAIN ADMIN DASHBOARD TEMPLATE -->
+<template name="editusers">
+    <h2>Edit Users</h2>
     <table class="table table-bordered">
         <thead>
             <tr>
@@ -96,7 +125,6 @@
             {{/each}}
         </tbody>
     </table>
-    {{> createuser}}
 </template>
 
 <!-- ADMIN USERS TABLE TEMPLATE -->
@@ -116,7 +144,7 @@
 
 <!-- ADMIN CREATE USER TEMPLATE -->
 <template name="createuser">
-    <h3>Create New User</h3>
+    <h2>Create New User</h2>
     <form class="form-horizontal" id="createUserForm">
         <div class="control-group">
             <label class="control-label" for="createUserEmail">Email</label>

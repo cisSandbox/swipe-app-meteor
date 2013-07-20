@@ -24,14 +24,29 @@ Template.dashboard.events({
     },
     'click #tutorqueue': function() {
         Meteor.Router.to('/tutor-queue');
+    },
+    'click #tutorButton': function() {
+        var visit = WorkVisits.findOne({tutorId: Meteor.userId(), timeOut: null});
+        if (visit) {
+            WorkVisits.update({_id: visit._id}, {$set: {timeOut: new Date()}});
+        } else {
+            WorkVisits.insert({tutorId: Meteor.userId(), timeIn: new Date(), timeOut: null});
+        }
     }
 });
 
-// Tutor dashboard stuff
-
-Template.tutordashboard.currentlyTutoring = function() {
+Template.dashboard.currentlyTutoring = function() {
     return WorkVisits.findOne({tutorId: Meteor.userId(), timeOut: null});
 };
+
+Template.dashboard.canTutor = function() {
+    if (Meteor.user().roles[0]) {
+        return true;
+    }
+};
+
+
+// Tutor dashboard stuff
 
 Template.edituser.courses = function() {
     var courses = [];
@@ -44,17 +59,6 @@ Template.edituser.courses = function() {
     });
     return courses;
 };
-
-Template.tutordashboard.events({
-    'click #tutorButton': function() {
-        var visit = WorkVisits.findOne({tutorId: Meteor.userId(), timeOut: null});
-        if (visit) {
-            WorkVisits.update({_id: visit._id}, {$set: {timeOut: new Date()}});
-        } else {
-            WorkVisits.insert({tutorId: Meteor.userId(), timeIn: new Date(), timeOut: null});
-        }
-    }
-});
 
 Template.edituser.events({
     'click #editUserSubmit': function(e, t) {
@@ -72,7 +76,7 @@ Template.edituser.events({
 
 // Admin dashboard stuff
 
-Template.admindashboard.users = function() {
+Template.editusers.users = function() {
     return Meteor.users.find();
 };
 
