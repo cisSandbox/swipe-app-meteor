@@ -37,8 +37,8 @@ Template.useridentry.events = {
         }
         // handle if user is found
         if (e.target.value.length === 8) {
-            if (Visits.find({universityID: e.target.value, timeOut: null}).count() > 0) {
-                Meteor.Errors.throw('Student already swiped in');
+            if (Visits.findOne({universityID: e.target.value, timeOut: null})) {
+                Meteor.Messages.postMessage('error', 'Student already signed in');
                 e.target.value = '';
             } else {
                 var s = Students.findOne({universityID: e.target.value});
@@ -46,7 +46,7 @@ Template.useridentry.events = {
                     student = s;
                     Session.set("innerTemplate", "studenthelp");
                 } else {
-                    Meteor.Errors.throw('Student does not exist');
+                    Meteor.Messages.postMessage('error', 'Student does not exist');
                     e.target.value = '';
                 }
             }
@@ -78,7 +78,7 @@ Template.courseselection.courses = function() {
 
 Template.courseselection.events({
     'click button': function(e) {
-        Visits.insert({name: student.name, timeIn: new Date(), timeOut: null, needHelp: true, course: e.target.value});
+        Visits.insert({name: student.name, timeIn: new Date(), timeOut: null, needHelp: true, course: e.target.value, universityID: student.universityID});
         location.reload();
     }
 });

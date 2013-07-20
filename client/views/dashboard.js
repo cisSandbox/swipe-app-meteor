@@ -63,7 +63,7 @@ Template.edituser.events({
             values.push(c.value);
         });
         Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.name': name, 'profile.canTutor': values}});
-        alert('Profile Updated');
+        Meteor.Messages.postMessage('success', 'Profile updated successfully');
     }
 });
 
@@ -77,6 +77,7 @@ Template.userstable.events({
     'click #deleteUser': function() {
         if (window.confirm('Are you sure? This cannot be undone.')) {
             Meteor.call('adminRemoveUser', this._id);
+            Meteor.Messages.postMessage('success', 'User removed successfully');
         }
     }
 });
@@ -95,5 +96,6 @@ Template.createuser.events({
             password  = t.find('#createUserPassword').value,
             role      = t.find('#createUserRole').value;
         Meteor.call('adminCreateUser', {email: email, password: password, profile: {name: name, shortname: shortname}}, role);
+        Meteor.Messages.postMessage('success', 'User created successfully');
     }
 });

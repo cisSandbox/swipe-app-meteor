@@ -1,0 +1,16 @@
+<template name="flashmessages">
+    {{#each messages}}
+        {{> flashmessage}}
+    {{/each}}
+</template>
+
+<template name="flashmessage">
+    <div class="alert alert-{{type}}">
+        <button type="button" class="close" data-dismiss="alert" id="close-message">&times;</button>
+        <ul>
+            {{#each message}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+</template>

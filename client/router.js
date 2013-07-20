@@ -32,16 +32,18 @@ Meteor.Router.filters({
                 // This is realllllly convoluted. I should fix it.
                 var v = !WorkVisits.findOne({tutorId: Meteor.userId(), timeOut: null});
                 if (page === 'tutorform' && v) {
+                    Meteor.Messages.postMessage('error', 'Tutors must be currently working to access the tutor form page.');
                     goto = 'login';
                 } else {
                     goto = page;
                 }
             } else {
-                Meteor.Errors.throw('You do not have permission to access the ' + page + ' page.');
                 goto = 'login';
+                Meteor.Messages.postMessage('error', 'You do not have permission to access the ' + page + 'page.');
             }
         } else {
             goto = 'login';
+            Meteor.Messages.postMessage('error', 'You do must be logged in to access the ' + page + 'page.');
         }
         return goto;
     }
