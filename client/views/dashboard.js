@@ -21,6 +21,9 @@ Template.dashboard.events({
     'click #logout': function() {
         Meteor.logout();
         Meteor.Router.to('/login');
+    },
+    'click #tutorqueue': function() {
+        Meteor.Router.to('/tutor-queue');
     }
 });
 

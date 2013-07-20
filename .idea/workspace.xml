@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" name="Default" comment="˚">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/messages.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/messages.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/index.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/dashboard.html" afterPath="$PROJECT_DIR$/client/views/dashboard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/dashboard.js" afterPath="$PROJECT_DIR$/client/views/dashboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/router.js" afterPath="$PROJECT_DIR$/client/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/swipescreen.js" afterPath="$PROJECT_DIR$/client/views/swipescreen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/swipe.css" afterPath="$PROJECT_DIR$/client/stylesheets/swipe.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="swipe-app-meteor.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374272005908" ignored="false" />
+    <file path="/Dummy.txt" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374347451616" ignored="false" />
     <file path="/index.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1373932260110" ignored="false" />
-    <file path="/router.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374279170102" ignored="false" />
+    <file path="/router.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374353404828" ignored="false" />
     <file path="/swipescreen.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374277251882" ignored="false" />
     <file path="/swipescreen.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374258356992" ignored="false" />
     <file path="/publications.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374249323593" ignored="false" />
@@ -25,8 +22,8 @@
     <file path="/a.dummy" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374277363798" ignored="false" />
     <file path="$USER_HOME$/Dropbox/Doc/Emails/Tips-7-16/tips.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374096403630" ignored="false" />
     <file path="/tips.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374092964067" ignored="false" />
-    <file path="/dashboard.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374250483752" ignored="false" />
-    <file path="/dashboard.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374242235526" ignored="false" />
+    <file path="/dashboard.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374353210227" ignored="false" />
+    <file path="/dashboard.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374352941428" ignored="false" />
     <file path="$PROJECT_DIR$/../aycl-landing-pages/index.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374078786956" ignored="false" />
     <file path="/index.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374078785709" ignored="false" />
     <file path="$PROJECT_DIR$/../aycl-landing-pages/sass/screen.scss" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374079012234" ignored="false" />
@@ -57,6 +54,9 @@
     <file path="/messages.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374279980789" ignored="false" />
     <file path="/messages.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374277883786" ignored="false" />
     <file path="/messageslib.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374279662303" ignored="false" />
+    <file path="/tapoutqueue.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374347551655" ignored="false" />
+    <file path="/swipe.css" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374352689760" ignored="false" />
+    <file path="/dummy.txt" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374352506018" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,10 +78,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="router.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/router.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                <state line="47" column="54" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.76605946">
                   <folding />
                 </state>
               </provider>
@@ -90,7 +90,16 @@
           <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/dashboard.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="24" selection-start="863" selection-end="863" vertical-scroll-proportion="36.0">
+                <state line="24" column="0" selection-start="1122" selection-end="1122" vertical-scroll-proportion="-15.692307">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="swipe.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/stylesheets/swipe.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="17" column="1" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -109,17 +118,15 @@
             <entry file="file://$PROJECT_DIR$/client/lib/messageslib.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="24" column="0" selection-start="699" selection-end="699" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="messages.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="messages.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/messages.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="0" selection-start="280" selection-end="280" vertical-scroll-proportion="0.14825581">
+                <state line="15" column="11" selection-start="415" selection-end="415" vertical-scroll-proportion="-9.807693">
                   <folding />
                 </state>
               </provider>
@@ -129,10 +136,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="dashboard.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="dashboard.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="59" column="48" selection-start="1567" selection-end="1567" vertical-scroll-proportion="0.0">
+                <state line="24" column="37" selection-start="495" selection-end="495" vertical-scroll-proportion="0.29338446">
                   <folding />
                 </state>
               </provider>
@@ -141,19 +148,17 @@
           <file leaf-file-name="tutorform.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/tutorform.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="tapoutqueue.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="tapoutqueue.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/tapoutqueue.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
+                <state line="19" column="72" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -184,12 +189,12 @@
       <MyDateState />
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///dummy.txt" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/server/mainuser.js" />
-        <option value="$PROJECT_DIR$/server/lib/methods.js" />
-        <option value="$PROJECT_DIR$/client/views/dashboard.html" />
         <option value="$PROJECT_DIR$/server/publications.js" />
         <option value="$PROJECT_DIR$/client/views/swipescreen.html" />
         <option value="$PROJECT_DIR$/client/views/tutorqueue.js" />
@@ -199,10 +204,13 @@
         <option value="$PROJECT_DIR$/client/index.js" />
         <option value="$PROJECT_DIR$/client/views/swipescreen.js" />
         <option value="$PROJECT_DIR$/client/lib/messageslib.js" />
-        <option value="$PROJECT_DIR$/client/router.js" />
         <option value="$PROJECT_DIR$/client/views/messages.js" />
-        <option value="$PROJECT_DIR$/client/views/dashboard.js" />
         <option value="$PROJECT_DIR$/client/views/messages.html" />
+        <option value="$PROJECT_DIR$/client/views/tapoutqueue.js" />
+        <option value="$PROJECT_DIR$/client/stylesheets/swipe.css" />
+        <option value="$PROJECT_DIR$/client/views/dashboard.html" />
+        <option value="$PROJECT_DIR$/client/views/dashboard.js" />
+        <option value="$PROJECT_DIR$/client/router.js" />
       </list>
     </option>
   </component>
@@ -221,14 +229,30 @@
             <id />
           </State>
           <State>
-            <id>HTML</id>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code StylePHP</id>
+          </State>
+          <State>
+            <id>Data flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Naming conventionsJavaScript</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>XPath</id>
           </State>
         </expanded-state>
-        <selected-state>
-          <State>
-            <id>HtmlUnknownTag</id>
-          </State>
-        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -304,25 +328,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swipe-app-meteor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swipe-app-meteor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -332,17 +338,17 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="Errors" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="JavaScriptLanguageLevel" value="ES5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/client" />
     <property name="FullScreen" value="false" />
     <property name="JavaScriptPreferStrict" value="true" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RunManager">
     <list size="0" />
@@ -399,18 +405,19 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881773" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872927" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1459893" sideWeight="0.6712707" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14759359" sideWeight="0.6697417" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986766" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296501" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296501" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872927" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.6703704" order="4" side_tool="false" content_ui="tabs" />
@@ -479,13 +486,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/publications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="43" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collections/collections.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="14" selection-start="675" selection-end="675" vertical-scroll-proportion="0.0">
@@ -495,44 +495,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/swipescreen.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="29" selection-start="286" selection-end="286" vertical-scroll-proportion="0.22413793">
-          <folding />
-        </state>
+        <state line="13" column="29" selection-start="286" selection-end="286" vertical-scroll-proportion="0.22413793" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/tapoutqueue.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="276" selection-end="276" vertical-scroll-proportion="0.18533202">
-          <folding />
-        </state>
+        <state line="11" column="16" selection-start="276" selection-end="276" vertical-scroll-proportion="0.18533202" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/tutorqueue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="2" selection-start="425" selection-end="425" vertical-scroll-proportion="0.18297456">
-          <folding />
-        </state>
+        <state line="15" column="2" selection-start="425" selection-end="425" vertical-scroll-proportion="0.18297456" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/lib/methods.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="3" selection-start="291" selection-end="291" vertical-scroll-proportion="0.16425121">
-          <folding />
-        </state>
+        <state line="10" column="3" selection-start="291" selection-end="291" vertical-scroll-proportion="0.16425121" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="29" selection-start="196" selection-end="196" vertical-scroll-proportion="0.18120155">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="24" selection-start="863" selection-end="863" vertical-scroll-proportion="36.0">
-          <folding />
-        </state>
+        <state line="11" column="29" selection-start="196" selection-end="196" vertical-scroll-proportion="0.18120155" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/swipescreen.js">
@@ -545,13 +528,11 @@
     <entry file="file://$PROJECT_DIR$/client/lib/messageslib.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="0" selection-start="699" selection-end="699" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/router.js">
+    <entry file="file://$PROJECT_DIR$/client/views/tutorform.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -565,32 +546,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="48" selection-start="1567" selection-end="1567" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/tutorform.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/tapoutqueue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="19" column="72" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/messages.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="280" selection-end="280" vertical-scroll-proportion="0.14825581">
+        <state line="15" column="11" selection-start="415" selection-end="415" vertical-scroll-proportion="-9.807693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/swipe.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="1" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="37" selection-start="495" selection-end="495" vertical-scroll-proportion="0.29338446">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="1122" selection-end="1122" vertical-scroll-proportion="-15.692307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="54" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.76605946">
           <folding />
         </state>
       </provider>

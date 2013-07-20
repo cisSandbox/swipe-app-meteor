@@ -37,13 +37,15 @@ Meteor.Router.filters({
                 } else {
                     goto = page;
                 }
+            } else if (page === 'not_found') {
+                goto = page;
             } else {
                 goto = 'login';
                 Meteor.Messages.postMessage('error', 'You do not have permission to access the ' + page + 'page.');
             }
         } else {
             goto = 'login';
-            Meteor.Messages.postMessage('error', 'You do must be logged in to access the ' + page + 'page.');
+            Meteor.Messages.postMessage('error', 'You must be logged in to access the ' + page + 'page.');
         }
         return goto;
     }

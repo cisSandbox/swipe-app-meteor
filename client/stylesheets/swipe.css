@@ -5,3 +5,14 @@ h1 {
 .main-button-container {
     text-align: center;
 }
+
+.background-gray {
+    background: #F5F5F5;
+    border: 1px solid #E3E3E3;
+    border-radius: 6px;
+    padding: 15px 10px;
+}
+
+.background-gray h4 {
+    text-align: center;
+}

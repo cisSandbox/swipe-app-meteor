@@ -1,25 +1,53 @@
 <!-- MAIN TEMPLATE -->
 <template name="dashboard">
-    <h1>Dashboard</h1>
     <h2>
         Hello,
         {{currentUser.profile.name}}
     </h2>
-    {{{showDynamicContent}}}
-    <button class="btn btn-danger" id="logout">Logout</button>
+    <div class="container-fluid">
+        <div class="row-fluid show-grid">
+            <div class="span3 background-gray">
+                <h4>Quick Links</h4>
+                <br />
+                <button class="btn btn-large btn-block {{#if currentlyTutoring}}btn-danger{{else}}btn-success{{/if}}" id="tutorButton">
+                    {{#if currentlyTutoring}}Stop Working{{else}}Start Working{{/if}}
+                </button>
+                <button class="btn btn-large btn-block btn-primary" id="tutorqueue">Tutor Queue</button>
+                <button class="btn btn-large btn-block btn-danger" id="logout">Logout</button>
+                <br />
+                <a href="http://blackboard.bentley.edu" class="btn btn-block" target="_blank">Blackboard Site</a>
+                <a href="http://cis.bentley.edu/sandbox" class="btn btn-block" target="_blank">Sandbox Blog</a>
+            </div>
+            <div class="span9">{{{showDynamicContent}}}</div>
+        </div>
+    </div>
 </template>
 
 <!-- MAIN TUTOR DASHBOARD TEMPLATE -->
 <template name="tutordashboard">
-    {{> edituser}}
-	<button class="btn {{#if currentlyTutoring}}btn-danger{{else}}btn-success{{/if}}" id="tutorButton">
-        {{#if currentlyTutoring}}Stop Working{{else}}Start Working{{/if}}
-    </button>
+    <div class="tabbable"> <!-- Only required for left/right tabs -->
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab1" data-toggle="tab">My Profile</a></li>
+            <li><a href="#tab2" data-toggle="tab">My Hours</a></li>
+            <li><a href="#tab3" data-toggle="tab">My Tutoring History</a></li>
+        </ul>
+        <div class="tab-content background-gray">
+            <div class="tab-pane active" id="tab1">
+                <h2>My Profile</h2>
+                {{> edituser}}
+            </div>
+            <div class="tab-pane" id="tab2">
+                <h2>My Hours</h2>
+            </div>
+            <div class="tab-pane" id="tab3">
+                <h2>My Tutoring History</h2>
+            </div>
+        </div>
+    </div>
 </template>
 
 <!-- TUTOR EDIT USER TEMPLATE -->
 <template name="edituser">
-    <h3>Edit User Data</h3>
     <form class="form-horizontal" id="editUserForm">
         <!-- IMAGE UPLOAD SHOULD GO HERE -->
         <div class="control-group">
