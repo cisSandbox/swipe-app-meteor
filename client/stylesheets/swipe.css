@@ -16,3 +16,7 @@ h1 {
 .background-gray h4 {
     text-align: center;
 }
+
+table {
+    background: #FFF;
+}

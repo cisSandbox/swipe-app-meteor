@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" name="Default" comment="˚">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/tutorform.html" afterPath="$PROJECT_DIR$/client/views/tutorform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/savefilelib.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/lib/savefilelib.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/dashboard.html" afterPath="$PROJECT_DIR$/client/views/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/dashboard.js" afterPath="$PROJECT_DIR$/client/views/dashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/swipe.css" afterPath="$PROJECT_DIR$/client/stylesheets/swipe.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/tutorform.js" afterPath="$PROJECT_DIR$/client/views/tutorform.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -20,8 +24,8 @@
     <file path="/a.dummy" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374277363798" ignored="false" />
     <file path="$USER_HOME$/Dropbox/Doc/Emails/Tips-7-16/tips.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374096403630" ignored="false" />
     <file path="/tips.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374092964067" ignored="false" />
-    <file path="/dashboard.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374354142480" ignored="false" />
-    <file path="/dashboard.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374354601054" ignored="false" />
+    <file path="/dashboard.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374415745635" ignored="false" />
+    <file path="/dashboard.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374415387049" ignored="false" />
     <file path="$PROJECT_DIR$/../aycl-landing-pages/index.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374078786956" ignored="false" />
     <file path="/index.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374078785709" ignored="false" />
     <file path="$PROJECT_DIR$/../aycl-landing-pages/sass/screen.scss" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374079012234" ignored="false" />
@@ -53,11 +57,12 @@
     <file path="/messages.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374277883786" ignored="false" />
     <file path="/messageslib.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374279662303" ignored="false" />
     <file path="/tapoutqueue.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374347551655" ignored="false" />
-    <file path="/swipe.css" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374352689760" ignored="false" />
+    <file path="/swipe.css" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374369443900" ignored="false" />
     <file path="/dummy.txt" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374352506018" ignored="false" />
     <file path="/tutorform.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374356140892" ignored="false" />
-    <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/jquery/jquery.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374355615049" ignored="false" />
     <file path="/tutorform.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374355978771" ignored="false" />
+    <file path="/savefilelib.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374414281175" ignored="false" />
+    <file path="$PROJECT_DIR$/.meteor/local/build/app.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374414952380" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,17 +92,19 @@
           <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/router.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="47" column="54" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.0">
+                <state line="28" column="45" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/views/dashboard.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="126" column="12" selection-start="4543" selection-end="4543" vertical-scroll-proportion="-26.038462">
-                  <folding />
+                <state line="61" column="64" selection-start="2428" selection-end="2428" vertical-scroll-proportion="0.35915494">
+                  <folding>
+                    <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#form#0;n#template#3;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -105,7 +112,7 @@
           <file leaf-file-name="swipe.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/stylesheets/swipe.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="1" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+                <state line="20" column="20" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -138,10 +145,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="tutorform.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="tutorform.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/tutorform.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="36" selection-start="505" selection-end="505" vertical-scroll-proportion="0.23634557">
+                <state line="18" column="14" selection-start="567" selection-end="567" vertical-scroll-proportion="-11.769231">
                   <folding />
                 </state>
               </provider>
@@ -151,19 +158,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="dashboard.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="dashboard.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="79" column="4" selection-start="2126" selection-end="2153" vertical-scroll-proportion="0.0">
+                <state line="113" column="0" selection-start="3260" selection-end="3260" vertical-scroll-proportion="0.9127517">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="tutorform.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="tutorform.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/tutorform.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="27" column="53" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.4400767">
+                <state line="17" column="27" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -210,8 +217,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/collections/collections.js" />
-        <option value="$PROJECT_DIR$/client/lib/messages.js" />
         <option value="$PROJECT_DIR$/client/index.html" />
         <option value="$PROJECT_DIR$/client/index.js" />
         <option value="$PROJECT_DIR$/client/views/swipescreen.js" />
@@ -219,13 +224,15 @@
         <option value="$PROJECT_DIR$/client/views/messages.js" />
         <option value="$PROJECT_DIR$/client/views/messages.html" />
         <option value="$PROJECT_DIR$/client/views/tapoutqueue.js" />
-        <option value="$PROJECT_DIR$/client/stylesheets/swipe.css" />
-        <option value="$PROJECT_DIR$/client/views/dashboard.js" />
-        <option value="$PROJECT_DIR$/client/views/dashboard.html" />
         <option value="$PROJECT_DIR$/.meteor/local/build/static_cacheable/client/views/tutorform.js" />
         <option value="$PROJECT_DIR$/client/router.js" />
         <option value="$PROJECT_DIR$/client/views/tutorform.html" />
+        <option value="$PROJECT_DIR$/client/stylesheets/swipe.css" />
         <option value="$PROJECT_DIR$/client/views/tutorform.js" />
+        <option value="$PROJECT_DIR$/client/lib/savefilelib.js" />
+        <option value="$PROJECT_DIR$/lib/savefilelib.js" />
+        <option value="$PROJECT_DIR$/client/views/dashboard.html" />
+        <option value="$PROJECT_DIR$/client/views/dashboard.js" />
       </list>
     </option>
   </component>
@@ -325,6 +332,52 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swipe-app-meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swipe-app-meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swipe-app-meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swipe-app-meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swipe-app-meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swipe-app-meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -347,6 +400,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swipe-app-meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swipe-app-meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -364,6 +435,11 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/lib" />
+    </key>
   </component>
   <component name="RunManager">
     <list size="0" />
@@ -501,16 +577,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/views/tutorqueue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="2" selection-start="425" selection-end="425" vertical-scroll-proportion="0.18297456" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/lib/methods.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="3" selection-start="291" selection-end="291" vertical-scroll-proportion="0.16425121" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="29" selection-start="196" selection-end="196" vertical-scroll-proportion="0.18120155" />
@@ -544,30 +610,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/swipe.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="1" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="12" selection-start="4543" selection-end="4543" vertical-scroll-proportion="-26.038462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/publications.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="0" selection-start="698" selection-end="698" vertical-scroll-proportion="0.5430784">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/tapoutqueue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="72" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -579,30 +624,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="54" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="4" selection-start="2126" selection-end="2153" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/tutorform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="36" selection-start="505" selection-end="505" vertical-scroll-proportion="0.23634557">
+        <state line="18" column="14" selection-start="567" selection-end="567" vertical-scroll-proportion="-11.769231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/swipe.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="20" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/tapoutqueue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="72" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/tutorform.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="53" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.4400767">
+        <state line="17" column="27" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/savefilelib.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="2" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/lib/savefilelib.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="40" selection-start="246" selection-end="246" vertical-scroll-proportion="0.09659091">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="45" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="64" selection-start="2428" selection-end="2428" vertical-scroll-proportion="0.35915494">
+          <folding>
+            <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#form#0;n#template#3;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="0" selection-start="3260" selection-end="3260" vertical-scroll-proportion="0.9127517">
           <folding />
         </state>
       </provider>

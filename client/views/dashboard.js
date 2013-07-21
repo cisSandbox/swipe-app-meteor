@@ -61,6 +61,9 @@ Template.edituser.courses = function() {
 };
 
 Template.edituser.events({
+    'change #editPicture': function(e) {
+
+    },
     'click #editUserSubmit': function(e, t) {
         e.preventDefault();
         var name = t.find('#editUserName').value,
@@ -69,7 +72,13 @@ Template.edituser.events({
         _.each(selectedCourses, function(c) {
             values.push(c.value);
         });
-        Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.name': name, 'profile.canTutor': values}});
+        var pictureName = '';
+        _.each(t.find('#editPicture').files, function(file) {
+            Meteor.saveFile(file, file.name);
+            pictureName = file.name;
+        });
+        console.log(pictureName);
+        Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.name': name, 'profile.canTutor': values, 'profile.picture': pictureName}});
         Meteor.Messages.postMessage('success', 'Profile updated successfully');
     }
 });
@@ -102,7 +111,7 @@ Template.createuser.events({
             shortname = t.find('#createUserShortname').value,
             password  = t.find('#createUserPassword').value,
             role      = t.find('#createUserRole').value;
-        Meteor.call('adminCreateUser', {email: email, password: password, profile: {name: name, shortname: shortname}}, role);
+        Meteor.call('adminCreateUser', {email: email, password: password, profile: {name: name, shortname: shortname, picture: null}}, role);
         Meteor.Messages.postMessage('success', 'User created successfully');
     }
 });
