@@ -81,8 +81,11 @@ Template.edituser.events({
             Meteor.saveFile(file, file.name);
             pictureName = file.name;
         });
-        console.log(pictureName);
-        Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.name': name, 'profile.canTutor': values, 'profile.picture': pictureName}});
+        if (pictureName) {
+            Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.name': name, 'profile.canTutor': values, 'profile.picture': pictureName}});
+        } else {
+            Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.name': name, 'profile.canTutor': values}});
+        }
         Meteor.Messages.postMessage('success', 'Profile updated successfully');
     }
 });
