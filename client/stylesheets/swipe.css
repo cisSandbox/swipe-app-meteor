@@ -20,3 +20,8 @@ h1 {
 table {
     background: #FFF;
 }
+
+.profile-picture {
+    max-height: 200px;
+    max-width: 300px;
+}

@@ -60,6 +60,10 @@ Template.edituser.courses = function() {
     return courses;
 };
 
+Template.tutorhistory.tutoredVisits = function() {
+    return TutoredVisits.find({tutorName: Meteor.user().profile.name});
+};
+
 Template.edituser.events({
     'change #editPicture': function(e) {
 

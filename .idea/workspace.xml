@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" name="Default" comment="˚">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/savefilelib.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/lib/savefilelib.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/dashboard.html" afterPath="$PROJECT_DIR$/client/views/dashboard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/dashboard.js" afterPath="$PROJECT_DIR$/client/views/dashboard.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/swipe.css" afterPath="$PROJECT_DIR$/client/stylesheets/swipe.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/tutorform.js" afterPath="$PROJECT_DIR$/client/views/tutorform.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="swipe-app-meteor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,8 +20,8 @@
     <file path="/a.dummy" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374277363798" ignored="false" />
     <file path="$USER_HOME$/Dropbox/Doc/Emails/Tips-7-16/tips.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374096403630" ignored="false" />
     <file path="/tips.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374092964067" ignored="false" />
-    <file path="/dashboard.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374415745635" ignored="false" />
-    <file path="/dashboard.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374415387049" ignored="false" />
+    <file path="/dashboard.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374428032915" ignored="false" />
+    <file path="/dashboard.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374428221794" ignored="false" />
     <file path="$PROJECT_DIR$/../aycl-landing-pages/index.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374078786956" ignored="false" />
     <file path="/index.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374078785709" ignored="false" />
     <file path="$PROJECT_DIR$/../aycl-landing-pages/sass/screen.scss" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374079012234" ignored="false" />
@@ -57,7 +53,7 @@
     <file path="/messages.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374277883786" ignored="false" />
     <file path="/messageslib.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374279662303" ignored="false" />
     <file path="/tapoutqueue.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374347551655" ignored="false" />
-    <file path="/swipe.css" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374369443900" ignored="false" />
+    <file path="/swipe.css" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374427440115" ignored="false" />
     <file path="/dummy.txt" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374352506018" ignored="false" />
     <file path="/tutorform.js" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374356140892" ignored="false" />
     <file path="/tutorform.html" changelist="05aca6ae-8a03-45fe-a3c9-c6eeb4d4ba1a" time="1374355978771" ignored="false" />
@@ -98,12 +94,12 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="dashboard.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/views/dashboard.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="61" column="64" selection-start="2428" selection-end="2428" vertical-scroll-proportion="0.35915494">
+                <state line="51" column="24" selection-start="2074" selection-end="2074" vertical-scroll-proportion="0.47887325">
                   <folding>
-                    <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#form#0;n#template#3;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#form#0;n#template#5;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -112,7 +108,7 @@
           <file leaf-file-name="swipe.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/stylesheets/swipe.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="20" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
+                <state line="14" column="0" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -158,10 +154,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="dashboard.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="dashboard.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="113" column="0" selection-start="3260" selection-end="3260" vertical-scroll-proportion="0.9127517">
+                <state line="63" column="40" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.4295302">
                   <folding />
                 </state>
               </provider>
@@ -227,12 +223,12 @@
         <option value="$PROJECT_DIR$/.meteor/local/build/static_cacheable/client/views/tutorform.js" />
         <option value="$PROJECT_DIR$/client/router.js" />
         <option value="$PROJECT_DIR$/client/views/tutorform.html" />
-        <option value="$PROJECT_DIR$/client/stylesheets/swipe.css" />
         <option value="$PROJECT_DIR$/client/views/tutorform.js" />
         <option value="$PROJECT_DIR$/client/lib/savefilelib.js" />
         <option value="$PROJECT_DIR$/lib/savefilelib.js" />
-        <option value="$PROJECT_DIR$/client/views/dashboard.html" />
+        <option value="$PROJECT_DIR$/client/stylesheets/swipe.css" />
         <option value="$PROJECT_DIR$/client/views/dashboard.js" />
+        <option value="$PROJECT_DIR$/client/views/dashboard.html" />
       </list>
     </option>
   </component>
@@ -631,13 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/swipe.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="20" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/tapoutqueue.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="72" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0">
@@ -673,19 +662,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/dashboard.html">
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/swipe.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="64" selection-start="2428" selection-end="2428" vertical-scroll-proportion="0.35915494">
-          <folding>
-            <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#form#0;n#template#3;n#!!top" expanded="true" />
-          </folding>
+        <state line="14" column="0" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="0" selection-start="3260" selection-end="3260" vertical-scroll-proportion="0.9127517">
+        <state line="63" column="40" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.4295302">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="24" selection-start="2074" selection-end="2074" vertical-scroll-proportion="0.47887325">
+          <folding>
+            <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#form#0;n#template#5;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
