@@ -27,7 +27,7 @@
 
 <!-- MAIN TUTOR DASHBOARD TEMPLATE -->
 <template name="tutordashboard">
-    <div class="tabbable"> <!-- Only required for left/right tabs -->
+    <div class="tabbable">
         <ul class="nav nav-tabs">
             <li class="active"><a href="#tab1" data-toggle="tab">My Profile</a></li>
             <li><a href="#tab2" data-toggle="tab">My Hours</a></li>
@@ -70,18 +70,34 @@
 </template>
 
 <template name="tutorhours">
-    <h2>My Hours</h2>
+    <h2>My Hours, current week</h2>
+   <!-- <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Day</th>
+                <th>Hours Worked</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>-->
 </template>
 
 <template name="profile">
-    <h2>My Profile</h2>
+    <!-- <h2>My Profile</h2> -->
     {{> edituser}}
 </template>
 
 <!-- TUTOR EDIT USER TEMPLATE -->
 <template name="edituser">
     <form class="form-horizontal" id="editUserForm">
-        <!-- IMAGE UPLOAD SHOULD GO HERE -->
+        <legend>Edit Profile</legend>
         <div class="control-group">
             <div class="controls">
                 {{#if currentUser.profile.picture}}
@@ -110,6 +126,26 @@
         <div class="control-group">
             <div class="controls">
                 <button type="submit" class="btn btn-primary" id="editUserSubmit">Save</button>
+            </div>
+        </div>
+    </form>
+    <form class="form-horizontal" id="changePassword">
+        <legend>Change Password</legend>
+        <div class="control-group">
+            <label class="control-label" for="oldPassword">Old Password:</label>
+            <div class="controls">
+                <input type="password" id="oldPassword" value="">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="newPassword">New Password:</label>
+            <div class="controls">
+                <input type="password" id="newPassword" value="">
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <button type="submit" class="btn btn-primary" id="saveNewPassword">Submit</button>
             </div>
         </div>
     </form>

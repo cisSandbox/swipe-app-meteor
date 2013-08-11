@@ -61,13 +61,10 @@ Template.edituser.courses = function() {
 };
 
 Template.tutorhistory.tutoredVisits = function() {
-    return TutoredVisits.find({tutorName: Meteor.user().profile.name});
+    return TutoredVisits.find({tutorName: Meteor.user().profile.name}, {limit: 10});
 };
 
 Template.edituser.events({
-    'change #editPicture': function(e) {
-
-    },
     'click #editUserSubmit': function(e, t) {
         e.preventDefault();
         var name = t.find('#editUserName').value,
@@ -87,6 +84,17 @@ Template.edituser.events({
             Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.name': name, 'profile.canTutor': values}});
         }
         Meteor.Messages.postMessage('success', 'Profile updated successfully');
+    },
+    'click #saveNewPassword': function(e, t) {
+        e.preventDefault();
+        console.log('click');
+        Accounts.changePassword(t.find('#oldPassword').value, t.find('#newPassword').value, function(err) {
+            if(err) {
+                Meteor.Messages.postMessage('error', err);
+            } else {
+                Meteor.Messages.postMessage('success', 'Password changed successfully');
+            }
+        });
     }
 });
 
