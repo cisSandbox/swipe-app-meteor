@@ -25,3 +25,7 @@ table {
     max-height: 200px;
     max-width: 300px;
 }
+
+.tutor-block img  {
+   with: 100%;
+}

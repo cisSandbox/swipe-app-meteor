@@ -6,9 +6,14 @@
 
 <template name="currenttutors">
     <h2>Tutors Available:</h2>
+    <div class="row-fluid">
     {{#each tutors}}
-        <p>{{username}}</p>
+        <div class="span4 tutor-block">
+            <img src="{{profile.picture}}" />
+            {{profile.name}}
+        </div>
     {{/each}}
+    </div>
 </template>
 
 <template name="useridentry">
@@ -16,11 +21,10 @@
     	<input type="password" id="student-id-entry" autofocus />
     </div>
 </template>
-
 <template name="studenthelp">
 	<h2>Hello, {{studentName}}</h2>
     <button class="btn btn-primary" id="needHelp">Need Help?</button>
-    <button class="btn btn-primary" id="noHelp">Just Chillin'</button>
+    <button class="btn btn-primary" id="noHelp">Just Chillin&rsquo;</button>
 </template>
 
 <template name="courseselection">
