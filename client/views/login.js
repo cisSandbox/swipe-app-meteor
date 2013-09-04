@@ -13,11 +13,11 @@ Template.login.events = ({
 		e.preventDefault();
 		var email    = t.find('#inputEmail').value;
 		var password = t.find('#inputPassword').value;
-		// Trim and validate your fields here.... 
+		// Trim and validate your fields here....
 
 		Meteor.loginWithPassword(email, password, function(err){
 			if (err) {
-				Session.set('errors', {'loginError': 'Incorrect credentials. Please try again.'});
+                Meteor.Messages.postMessage('error', err.message);
 			} else {
 				Session.set('errors', null);
 				if(Roles.userIsInRole(Meteor.userId(), 'frontScreen'))

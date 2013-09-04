@@ -49,15 +49,17 @@ Template.dashboard.canTutor = function() {
 // Tutor dashboard stuff
 
 Template.edituser.courses = function() {
-    var courses = [];
-    _.each(Courses.find().fetch(), function(course) {
-        if (_.contains(Meteor.user().profile.canTutor, course.abbr)) {
-            courses.push({abbr: course.abbr, selected: true});
-        } else {
-            courses.push({abbr: course.abbr});
-        }
-    });
-    return courses;
+    if (Template.dashboard.canTutor()) {
+        var courses = [];
+        _.each(Courses.find().fetch(), function(course) {
+            if (_.contains(Meteor.user().profile.canTutor, course.abbr)) {
+                courses.push({abbr: course.abbr, selected: true});
+            } else {
+                courses.push({abbr: course.abbr});
+            }
+        });
+        return courses;
+    }
 };
 
 Template.tutorhistory.tutoredVisits = function() {
