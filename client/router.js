@@ -67,17 +67,8 @@ Meteor.Router.filters({
             Meteor.Messages.postMessage('error', 'You must have admin permissions to access the ' + page + ' page.');
             return 'login';
         }
-    },
-    'checkWorkingTutor': function(page) {
-        if(Roles.userIsInRole(Meteor.userId(), 'admin') || WorkVisits.findOne({tutorId: Meteor.userId(), timeOut: null})) {
-            return page;
-        } else {
-            Meteor.Messages.postMessage('error', 'You must be currently working in order to fill out a tutor form.');
-            return 'login';
-        }
     }
 });
 
 Meteor.Router.filter('checkLogin', {except: [ 'not_found', 'login' ]});
 Meteor.Router.filter('checkFrontScreen', {only: frontScreenPages});
-Meteor.Router.filter('checkWorkingTutor', {only: 'tutor-form'});
