@@ -186,10 +186,11 @@
     <table class="table table-bordered">
         <thead>
             <tr>
-                <th>ID</th>
+                <!-- <th>ID</th> -->
                 <th>Name</th>
                 <th>Email</th>
                 <th>Role(s)</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -203,7 +204,7 @@
 <!-- ADMIN USERS TABLE TEMPLATE -->
 <template name="userstable">
     <tr>
-        <td>{{_id}}</td>
+        <!-- <td>{{_id}}</td> -->
         <td>{{profile.name}}</td>
         <td>
             {{#each emails}}
@@ -211,7 +212,10 @@
             {{/each}}
         </td>
         <td>{{roles}}</td>
-        <td><button class="btn btn-danger" id="deleteUser">Delete User</button></td>
+        <td>
+            <button class="btn btn-danger" id="deleteUser">Delete User</button>
+            <button class="btn btn-info" id="editUser">Edit User</button>
+        </td>
     </tr>
 </template>
 

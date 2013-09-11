@@ -17,7 +17,6 @@ var tutorPages       = ['dashboard', 'tutorqueue', 'tapoutqueue', 'home', 'tutor
 var professorPages   = ['dashboard', 'home', 'tapoutqueue', 'dashboard'];
 var frontScreenPages = ['swipescreen', 'tapoutqueue', 'home'];
 
-
 // Meteor.Router.filters({
 //     'checkLogin': function(page) {
 //         var goto;
@@ -72,3 +71,4 @@ Meteor.Router.filters({
 
 Meteor.Router.filter('checkLogin', {except: [ 'not_found', 'login' ]});
 Meteor.Router.filter('checkFrontScreen', {only: frontScreenPages});
+
