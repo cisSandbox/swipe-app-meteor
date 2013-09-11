@@ -65,13 +65,13 @@
   ],
   "manifest": [
     {
-      "path": "static_cacheable/eacd0ee6a592aa473c53b6408f774a07c1e8c7af.js",
+      "path": "static_cacheable/8383eb3d7a92ea137b152a03f9ea95f806618cc1.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/eacd0ee6a592aa473c53b6408f774a07c1e8c7af.js",
-      "size": 372672,
-      "hash": "eacd0ee6a592aa473c53b6408f774a07c1e8c7af"
+      "url": "/8383eb3d7a92ea137b152a03f9ea95f806618cc1.js",
+      "size": 372731,
+      "hash": "8383eb3d7a92ea137b152a03f9ea95f806618cc1"
     },
     {
       "path": "static_cacheable/9620bdaa2fcfb972c570fa8d0bd2dbac60e78bec.css",
@@ -112,7 +112,7 @@
     {
       "path": "app.html",
       "where": "internal",
-      "hash": "b1a8b5fd23ce7a21baedba29f9c95762dfb475f5"
+      "hash": "d88076dbac29e3a68cc482e9906cc2082152af45"
     }
   ],
   "release": "0.6.4.1"

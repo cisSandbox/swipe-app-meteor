@@ -6,6 +6,8 @@
 
  */
 
+Meteor.absoluteUrl({rootUrl:'http://sandbox.bentley.edu'});
+
 Meteor.subscribe('students');
 Meteor.subscribe('courses');
 Meteor.subscribe('visits');

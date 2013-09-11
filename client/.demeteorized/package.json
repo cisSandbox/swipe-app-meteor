@@ -1,6 +1,6 @@
 {
-  "name": "swipe-app-meteor",
-  "description": "swipe-app-meteor - automatically converted by Demeteorizer. https://github.com/onmodulus/demeteorizer",
+  "name": "client",
+  "description": "client - automatically converted by Demeteorizer. https://github.com/onmodulus/demeteorizer",
   "version": "0.0.1",
   "main": "main.js",
   "engines": {
