@@ -29,3 +29,23 @@ table {
 .tutor-block img  {
    with: 100%;
 }
+
+/****************************
+*    Conner's Styles        *
+****************************/
+.tutor-block{
+    position:relative;
+}
+.nameAndAbilities{
+    background-color: rgba(255,255,255,0.8);
+    position:absolute;
+    bottom:0px;
+    width: 100%;
+}
+.nameAndAbilities h3{
+    padding:0 0 0 12px;
+    margin: 0.25em 0;
+}
+.nameAndAbilities p{
+    padding:0.25em 12px;
+}
