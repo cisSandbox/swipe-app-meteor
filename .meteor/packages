@@ -8,3 +8,9 @@ bootstrap
 accounts-base
 accounts-password
 underscore
+standard-app-packages
+HTML5-History-API
+meteor-flash-messages
+page-js-ie-support
+roles
+router
