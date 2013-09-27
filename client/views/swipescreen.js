@@ -3,7 +3,7 @@
     Swipe screen hook-up
 
  */
-
+//var sha1 = require('lib/sha1.js');
 var reg = new RegExp('^[0-9|;]+$');
 var student;
 Session.set("innerTemplate", "useridentry");
@@ -37,6 +37,9 @@ Template.useridentry.events = {
         }
         // handle if user is found
         if (e.target.value.length === 8) {
+           // log the hash
+           alert(sha1(e.target.value));
+
             if (Visits.findOne({universityID: e.target.value, timeOut: null})) {
                 Meteor.Messages.postMessage('error', 'Student already signed in');
                 e.target.value = '';
