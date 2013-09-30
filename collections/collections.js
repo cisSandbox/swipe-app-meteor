@@ -73,6 +73,7 @@ TutoredVisits.allow({
     }
 });
 
+//
  // Students.insert({name: "Nick Hentschel", shortName: "hentsch_nich", universityID: "03236228"});
  // Students.insert({name: "Harry Bentley", shortName: "bentley_harr", universityID: "12345678"});
  // Students.insert({name: "John Smith", shortName: "smith_john", universityID: "11111111"});
@@ -80,12 +81,3 @@ TutoredVisits.allow({
  // Courses.insert({ name: "Intro to IT", abbr: "IT101", sections: [{number: "003", professor: "Frydenberg"}, {number: "001", professor: "Cooprider"}]});
  // Courses.insert({ name: "Intro to Programming", abbr: "CS180", sections: [{number: "001", professor: "Lucas"}]});
 
-//  Students.insert({name: "Nick Hentschel", shortName: "hentsch_nich", universityID: "03236228"});
-//  Students.insert({name: "Harry Bentley", shortName: "bentley_harr", universityID: "12345678"});
-//  Students.insert({name: "John Smith", shortName: "smith_john", universityID: "11111111"});
-//
-//  Courses.insert({ name: "Intro to IT", abbr: "IT101", sections: [{number: "003", professor: "Frydenberg"}, {number: "001", professor: "Cooprider"}]});
-//  Courses.insert({ name: "Intro to Programming", abbr: "CS180", sections: [{number: "001", professor: "Lucas"}]});
-//
-
-//Students.insert({name:"Traci Logan", shortName: "logan_trac", universityID:"1cd99f55222462816c34447aa1f61629217cd108"});
