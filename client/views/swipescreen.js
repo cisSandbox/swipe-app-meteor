@@ -38,7 +38,7 @@ Template.useridentry.events = {
         // handle if user is found
         if (e.target.value.length === 8) {
            // log the hash
-           alert(sha1(e.target.value));
+           console.log(Meteor.sha1('@' + e.target.value));
 
             if (Visits.findOne({universityID: e.target.value, timeOut: null})) {
                 Meteor.Messages.postMessage('error', 'Student already signed in');
@@ -54,6 +54,14 @@ Template.useridentry.events = {
                 }
             }
         }
+    }
+};
+
+Template.swipescreen.events = {
+    'keypress body': function(e){
+        e.preventDefault();
+        var character = String.fromCharCode(e.which);
+        console.log(character);
     }
 };
 
