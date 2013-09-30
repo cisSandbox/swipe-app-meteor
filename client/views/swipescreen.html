@@ -1,6 +1,6 @@
 <template name="swipescreen">
     <div class="sandbox-logo">
-        <img src="logo.png">
+        <img src="logo3.png">
     </div>
     <h1>Swipe In</h1>
     {{{showDynamicContent}}}
@@ -17,7 +17,7 @@
                 <h3>{{profile.name}}</h3>
                 <p>
                     {{#each profile.canTutor}}
-                        <span class="label label-info">{{this}}</span>
+                        <span class="label label-info">{{this.abbr}}</span>
                     {{/each}}
                 </p>
             </div>
