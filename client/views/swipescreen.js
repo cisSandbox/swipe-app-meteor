@@ -3,7 +3,7 @@
     Swipe screen hook-up
 
  */
-
+//var sha1 = require('lib/sha1.js');
 var reg = new RegExp('^[0-9|;]+$');
 var student;
 Session.set("innerTemplate", "useridentry");
@@ -37,11 +37,15 @@ Template.useridentry.events = {
         }
         // handle if user is found
         if (e.target.value.length === 8) {
-            if (Visits.findOne({universityID: e.target.value, timeOut: null})) {
+           // log the hash
+           var hash = Meteor.sha1('@' + e.target.value);
+           //console.log(hash);
+
+            if (Visits.findOne({universityID: hash, timeOut: null})) {
                 Meteor.Messages.postMessage('error', 'Student already signed in');
                 e.target.value = '';
             } else {
-                var s = Students.findOne({universityID: e.target.value});
+                var s = Students.findOne({universityID: hash});
                 if (s) {
                     student = s;
                     Session.set("innerTemplate", "studenthelp");
@@ -51,6 +55,14 @@ Template.useridentry.events = {
                 }
             }
         }
+    }
+};
+
+Template.swipescreen.events = {
+    'keypress body': function(e){
+        e.preventDefault();
+        var character = String.fromCharCode(e.which);
+        console.log(character);
     }
 };
 
