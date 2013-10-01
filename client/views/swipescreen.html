@@ -12,15 +12,17 @@
     <div class="row-fluid">
     {{#each tutors}}
         <div class="span4 tutor-block">
-            <img src="{{profile.picture}}" />
-            <div class="nameAndAbilities">
-                <h3>{{profile.name}}</h3>
-                <p>
-                    {{#each profile.canTutor}}
-                        <span class="label label-info">{{this.abbr}}</span>
-                    {{/each}}
-                </p>
-            </div>
+            <!-- <img src="{{profile.picture}}" /> -->
+            <div class="image" style="background-image: url('{{profile.picture}}')">
+                <div class="nameAndAbilities">
+                    <h3>{{profile.name}}</h3>
+                    <p>
+                        {{#each profile.canTutor}}
+                            <span class="label label-info">{{this.abbr}}</span>
+                        {{/each}}
+                    </p>
+                </div>    
+            </div> 
         </div>
     {{/each}}
     </div>
