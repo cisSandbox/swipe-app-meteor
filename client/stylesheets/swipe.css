@@ -27,7 +27,7 @@ table {
 }
 
 .tutor-block img  {
-   with: 100%;
+   width: 100%;
 }
 
 /****************************
@@ -48,4 +48,11 @@ table {
 }
 .nameAndAbilities p{
     padding:0.25em 12px;
+}
+.sandbox-logo img{
+    width: 100%
+}
+.image{
+    height:300px;
+    background-size:cover;
 }
