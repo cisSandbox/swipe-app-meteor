@@ -12,7 +12,11 @@ Meteor.setInterval(function() {
 }, 10000);
 
 Template.tutorqueue.needHelpStudents = function() {
-    return Visits.find({'timeOut': null, 'needHelp': true});
+    var visits = Visits.find({'timeOut': null, 'needHelp': true}).fetch();
+    for(var i = 0; i < visits.length; i++) {
+        visits[i].name = nameConcat(visits[i].name);
+    }
+    return visits;
 };
 
 Template.tutorqueue.checkFrontScreen = function() {
@@ -30,4 +34,8 @@ Template.needhelp.events({
         Meteor.Router.to('/tutor-form/' + this._id);
     }
 });
+
+var nameConcat = function(name) {
+    return name.substring(0, name.indexOf(' ') + 2) + '.'; 
+};
 
