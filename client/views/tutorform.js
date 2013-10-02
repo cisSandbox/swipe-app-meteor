@@ -5,7 +5,7 @@ Template.tutorform.currentVisit = function() {
 Template.tutorform.tutors = function() {
     // Should pull from currently logged-in user
     // Implement later
-    return Meteor.users.find({roles: 'tutor'});
+    return Meteor.users.find({roles: { $in: ['tutor', 'admin'] }});
 };
 
 Template.tutorform.courseSections = function() {
