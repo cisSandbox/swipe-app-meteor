@@ -13,9 +13,10 @@ Template.swipescreen.showDynamicContent = function() {
 };
 
 Template.currenttutors.tutors = function() {
-    var workVisits = WorkVisits.find({timeOut: null}),
-        users = Meteor.users.find(),
+    var workVisits = WorkVisits.find({"timeOut": null}).fetch(),
+        users = Meteor.users.find().fetch(),
         tutorsOnDuty = [];
+    // console.log(workVisits);
     if (workVisits) {
         workVisits.forEach(function(workVisit) {
             users.forEach(function(user) {
