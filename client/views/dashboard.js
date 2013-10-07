@@ -123,7 +123,7 @@ Template.createuser.events({
     'click #createUserSubmit': function(e, t) {
         e.preventDefault();
         console.log('click');
-        var email     = t.find('#createUserEmail').value,
+        var email     = t.find('#createUserEmail').value.toLowerCase(),
             name      = t.find('#createUserName').value,
             shortname = t.find('#createUserShortname').value,
             password  = t.find('#createUserPassword').value,

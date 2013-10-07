@@ -11,7 +11,7 @@ Template.login.loginErrors = function() {
 Template.login.events = ({
 	'click #inputSubmit' : function(e, t){
 		e.preventDefault();
-		var email    = t.find('#inputEmail').value;
+		var email    = t.find('#inputEmail').value.toLowerCase();
 		var password = t.find('#inputPassword').value;
 		// Trim and validate your fields here....
 
