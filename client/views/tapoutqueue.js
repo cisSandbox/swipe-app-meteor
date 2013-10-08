@@ -12,7 +12,11 @@ Meteor.setInterval(function() {
 }, 10000);
 
 Template.tapoutqueue.signedInStudents = function() {
-    return Visits.find({'timeOut': null});
+    var visits = Visits.find({'timeOut': null}).fetch();
+    for(var i = 0; i < visits.length; i++) {
+        visits[i].name = nameConcat(visits[i].name);
+    }
+    return visits;
 };
 
 Template.student.events({
@@ -20,3 +24,7 @@ Template.student.events({
         Visits.update({_id: this._id}, {$set: {'timeOut': new Date()}});
     }
 });
+
+var nameConcat = function(name) {
+    return name.substring(0, name.indexOf(' ') + 2) + '.'; 
+};
