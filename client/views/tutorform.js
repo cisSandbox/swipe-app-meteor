@@ -2,10 +2,14 @@ Template.tutorform.currentVisit = function() {
     return Visits.findOne({_id: Session.get('visitID')});
 };
 
-Template.tutorform.tutors = function() {
-    // Should pull from currently logged-in user
-    // Implement later
-    return Meteor.users.find({roles: { $in: ['tutor', 'admin'] }});
+// Template.tutorform.tutors = function() {
+//     // Should pull from currently logged-in user
+//     // Implement later
+//     return Meteor.users.find({roles: { $in: ['tutor', 'admin'] }});
+// };
+
+Template.tutorform.currentUser = function() {
+    return Meteor.user();
 };
 
 Template.tutorform.courseSections = function() {
