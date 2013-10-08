@@ -6,7 +6,9 @@
             <th>Name</th>
             <th>Time Waiting</th>
             <th>Course</th>
-            <th></th>
+            {{#if checkFrontScreen}}
+                <th></th>
+            {{/if}}
         </thead>
         <tbody>
         {{#each needHelpStudents}}
@@ -28,7 +30,9 @@
     <td>{{name}}</td>
     <td>{{timeDiff}} minutes</td>
     <td>{{course}}</td>
+    {{#if checkFrontScreen}}
     <td>
         <button class="btn btn-success"><i class="icon-pencil icon-white"></i> Tutor Form</button>
     </td>    
+    {{/if}}
 </template>

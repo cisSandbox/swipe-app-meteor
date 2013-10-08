@@ -19,7 +19,8 @@ Template.tutorqueue.needHelpStudents = function() {
     return visits;
 };
 
-Template.tutorqueue.checkFrontScreen = function() {
+// BAD... fix
+Template.needhelp.checkFrontScreen = Template.tutorqueue.checkFrontScreen = function() {
     return !Roles.userIsInRole(Meteor.userId(), 'frontScreen');
 };
 
