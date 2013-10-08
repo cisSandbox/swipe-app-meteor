@@ -24,7 +24,7 @@ Template.tutorform.events({
             section     = t.find("#inputCourseSection").value,
             timeIn      = Template.tutorform.currentVisit().timeIn,
             timeHelped  = new Date();
-        TutoredVisits.insert({name: name, tutorName: tutorName, course: course, duration: duration, description: description, section: section, timeIn: timeIn, timeHelped: timeHelped});
+        TutoredVisits.insert({name: name, tutorName: tutorName, course: course, duration: duration, description: description, section: section, timeIn: timeIn, timeHelped: timeHelped, tutorId: Meteor.userId()});
         Visits.update({_id: Template.tutorform.currentVisit()._id}, {$set: {needHelp: false}});
         Meteor.Router.to('/tutor-queue');
     }
