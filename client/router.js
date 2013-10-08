@@ -52,7 +52,10 @@ var frontScreenPages = ['swipescreen', 'tapoutqueue', 'home'];
 
 Meteor.Router.filters({
     'checkLogin': function(page) {
-        if(Meteor.user()) {
+        if(Meteor.loggingIn()) {
+            return 'logging_in';
+        }
+        else if(Meteor.user()) {
             return page;
         } else {
             Meteor.Messages.postMessage('error', 'You must be logged in to access the ' + page + 'page.');
