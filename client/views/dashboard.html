@@ -58,6 +58,7 @@
                 <th>Student Name</th>
                 <th>Course</th>
                 <th>Session Duration</th>
+                <th>Activity Description</th>
             </tr>
         </thead>
         <tbody>
@@ -66,6 +67,7 @@
                 <td>{{name}}</td>
                 <td>{{course}}</td>
                 <td>{{duration}}</td>
+                <td>{{description}}</td>
             </tr>
             {{/each}}
         </tbody>
@@ -168,6 +170,7 @@
             <li class="active"><a href="#tab1" data-toggle="tab">My Profile</a></li>
             <li><a href="#tab2" data-toggle="tab">Edit Users</a></li>
             <li><a href="#tab3" data-toggle="tab">Add New User</a></li>
+            <li><a href="#tab4" data-toggle="tab">Tutor History</a></li>
         </ul>
         <div class="tab-content background-gray">
             <div class="tab-pane active" id="tab1">
@@ -178,6 +181,9 @@
             </div>
             <div class="tab-pane" id="tab3">
                 {{> createuser}}
+            </div>
+            <div class="tab-pane" id="tab4">
+                {{> tutorhistory}}
             </div>
         </div>
     </div>
