@@ -4,8 +4,7 @@
         <img src="/logo.png">
     </div>
     <h2>
-        Hello,
-        {{currentUser.profile.name}}
+        Hello, {{currentUser.profile.name}}
     </h2>
     <div class="container-fluid">
         <div class="row-fluid show-grid">
@@ -23,35 +22,47 @@
                 <a href="http://blackboard.bentley.edu" class="btn btn-block" target="_blank">Blackboard Site</a>
                 <a href="http://cis.bentley.edu/sandbox" class="btn btn-block" target="_blank">Sandbox Blog</a>
             </div>
-            <div class="span9">{{{showDynamicContent}}}</div>
+            <div class="span9">{{> maindashboard}}</div>
         </div>
     </div>
 </template>
 
-<!-- MAIN TUTOR DASHBOARD TEMPLATE -->
-<template name="tutordashboard">
-    <div class="tabbable">
+<!-- MAIN ADMIN DASHBOARD TEMPLATE -->
+<template name="maindashboard">
+    <div class="tabbable"> <!-- Only required for left/right tabs -->
         <ul class="nav nav-tabs">
             <li class="active"><a href="#tab1" data-toggle="tab">My Profile</a></li>
-            <li><a href="#tab2" data-toggle="tab">My Hours</a></li>
-            <li><a href="#tab3" data-toggle="tab">My Tutoring History</a></li>
+            <li><a href="#tab2" data-toggle="tab">Tutor History</a></li>
+            <li><a href="#tab3" data-toggle="tab">My Hours</a></li>
+            {{#if isAdmin}}
+            <li><a href="#tab4" data-toggle="tab">Manage Users</a></li>
+            <li><a href="#tab5" data-toggle="tab">Add User</a></li>
+            {{/if}}
         </ul>
         <div class="tab-content background-gray">
             <div class="tab-pane active" id="tab1">
                 {{> profile}}
             </div>
             <div class="tab-pane" id="tab2">
-                {{> tutorhours}}
-            </div>
-            <div class="tab-pane" id="tab3">
                 {{> tutorhistory}}
             </div>
+            <div class="tab-pane" id="tab3">
+                {{> tutorhours}}
+            </div>
+            {{#if isAdmin}}
+            <div class="tab-pane" id="tab4">
+                {{> editusers}}
+            </div>
+            <div class="tab-pane" id="tab5">
+                {{> createuser}}
+            </div>
+            {{/if}}
         </div>
     </div>
 </template>
 
 <template name="tutorhistory">
-    <h2>My Tutor History</h2>
+    <legend>My Tutor History</legend>
     <table class="table table-bordered">
         <thead>
             <tr>
@@ -75,7 +86,7 @@
 </template>
 
 <template name="tutorhours">
-    <h2>My Hours, current week</h2>
+    <legend>My Hours, Current Week</legend>
    <!-- <table class="table table-bordered">
         <thead>
             <tr>
@@ -95,11 +106,9 @@
 </template>
 
 <template name="profile">
-    <!-- <h2>My Profile</h2> -->
     {{> edituser}}
 </template>
 
-<!-- TUTOR EDIT USER TEMPLATE -->
 <template name="edituser">
     <form class="form-horizontal" id="editUserForm">
         <legend>Edit Profile</legend>
@@ -163,35 +172,9 @@
     </label>
 </template>
 
-<!-- MAIN ADMIN DASHBOARD TEMPLATE -->
-<template name="admindashboard">
-    <div class="tabbable"> <!-- Only required for left/right tabs -->
-        <ul class="nav nav-tabs">
-            <li class="active"><a href="#tab1" data-toggle="tab">My Profile</a></li>
-            <li><a href="#tab2" data-toggle="tab">Edit Users</a></li>
-            <li><a href="#tab3" data-toggle="tab">Add New User</a></li>
-            <li><a href="#tab4" data-toggle="tab">Tutor History</a></li>
-        </ul>
-        <div class="tab-content background-gray">
-            <div class="tab-pane active" id="tab1">
-                {{> profile}}
-            </div>
-            <div class="tab-pane" id="tab2">
-                {{> editusers}}
-            </div>
-            <div class="tab-pane" id="tab3">
-                {{> createuser}}
-            </div>
-            <div class="tab-pane" id="tab4">
-                {{> tutorhistory}}
-            </div>
-        </div>
-    </div>
-</template>
 
-<!-- MAIN ADMIN DASHBOARD TEMPLATE -->
 <template name="editusers">
-    <h2>Edit Users</h2>
+    <legend>Manage Users</legend>
     <table class="table table-bordered">
         <thead>
             <tr>
@@ -210,7 +193,6 @@
     </table>
 </template>
 
-<!-- ADMIN USERS TABLE TEMPLATE -->
 <template name="userstable">
     <tr>
         <!-- <td>{{_id}}</td> -->
@@ -223,14 +205,16 @@
         <td>{{roles}}</td>
         <td>
             <button class="btn btn-danger" id="deleteUser">Delete User</button>
+            {{#if isWorking}}
+            <button class="btn btn-danger" id="stopworking">Stop Working</button>
+            {{/if}}
             <!-- <button class="btn btn&#45;info" id="editUser">Edit User</button> -->
         </td>
     </tr>
 </template>
 
-<!-- ADMIN CREATE USER TEMPLATE -->
 <template name="createuser">
-    <h2>Create New User</h2>
+    <legend>Create New User</legend>
     <form class="form-horizontal" id="createUserForm">
         <div class="control-group">
             <label class="control-label" for="createUserEmail">Email</label>

@@ -12,9 +12,8 @@ Template.dashboard.currentUser = function() {
     return Meteor.user();
 };
 
-Template.dashboard.showDynamicContent = function() {
-    Session.set('innerTemplate', Meteor.user().roles[0] + 'dashboard');
-    return Template[Session.get("innerTemplate")]();
+Template.maindashboard.isAdmin = function() {
+    return Roles.userIsInRole(Meteor.userId(), 'admin');
 };
 
 Template.dashboard.events({
@@ -89,7 +88,6 @@ Template.edituser.events({
     },
     'click #saveNewPassword': function(e, t) {
         e.preventDefault();
-        console.log('click');
         Accounts.changePassword(t.find('#oldPassword').value, t.find('#newPassword').value, function(err) {
             if(err) {
                 Meteor.Messages.postMessage('error', err);
@@ -112,8 +110,19 @@ Template.userstable.events({
             Meteor.call('adminRemoveUser', this._id);
             Meteor.Messages.postMessage('success', 'User removed successfully');
         }
+    },
+    'click #stopworking': function() {
+        console.log('click');
+        var visit = WorkVisits.findOne({tutorId: this._id, timeOut: null});
+        WorkVisits.update({_id: visit._id}, {$set: {timeOut: new Date()}});
     }
 });
+
+
+Template.userstable.isWorking = function() {
+    return WorkVisits.findOne({tutorId: this._id, timeOut: null});
+};
+
 
 Template.createuser.roles = function() {
     return Meteor.roles.find();
@@ -122,7 +131,6 @@ Template.createuser.roles = function() {
 Template.createuser.events({
     'click #createUserSubmit': function(e, t) {
         e.preventDefault();
-        console.log('click');
         var email     = t.find('#createUserEmail').value.toLowerCase(),
             name      = t.find('#createUserName').value,
             shortname = t.find('#createUserShortname').value,
