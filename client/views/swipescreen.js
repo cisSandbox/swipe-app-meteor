@@ -58,6 +58,16 @@ Template.useridentry.events = {
     }
 };
 
+Template.currenttutors.setSpan = function() {
+    var count = WorkVisits.find({timeOut: null}).count();
+    if(count <= 3) 
+        return 4;
+    else if(count === 4)
+        return 3;
+    else
+        return 2;
+};
+
 Template.studenthelp.studentName = function() {
     return student.name;
 };
