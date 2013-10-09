@@ -1,6 +1,5 @@
 Meteor.Router.add({
-    '/home': 'home',
-    '/': 'home',
+    '/': 'dashboard',
     '/login': 'login',
     '/swipe-screen': 'swipescreen',
     '/tutor-queue': 'tutorqueue',
@@ -13,9 +12,9 @@ Meteor.Router.add({
     '*': 'not_found'
 });
 
-var tutorPages       = ['dashboard', 'tutorqueue', 'tapoutqueue', 'home', 'tutorform', 'dashboard'];
+var tutorPages       = ['dashboard', 'tutorqueue', 'tapoutqueue', 'tutorform', 'dashboard'];
 var professorPages   = ['dashboard', 'home', 'tapoutqueue', 'dashboard'];
-var frontScreenPages = ['swipescreen', 'tapoutqueue', 'home'];
+var frontScreenPages = ['swipescreen', 'tapoutqueue'];
 
 // Meteor.Router.filters({
 //     'checkLogin': function(page) {

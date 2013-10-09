@@ -12,7 +12,7 @@ Template.dashboard.currentUser = function() {
     return Meteor.user();
 };
 
-Template.maindashboard.isAdmin = function() {
+Template.dashboard.isAdmin = Template.maindashboard.isAdmin = function() {
     return Roles.userIsInRole(Meteor.userId(), 'admin');
 };
 
@@ -23,6 +23,12 @@ Template.dashboard.events({
     },
     'click #tutorqueue': function() {
         Meteor.Router.to('/tutor-queue');
+    },
+    'click #tapoutqueue': function() {
+        Meteor.Router.to('/tapout-queue');
+    },
+    'click #swipescreen': function() {
+        Meteor.Router.to('/swipe-screen');
     },
     'click #tutorButton': function() {
         var visit = WorkVisits.findOne({tutorId: Meteor.userId(), timeOut: null});

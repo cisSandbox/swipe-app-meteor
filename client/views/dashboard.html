@@ -17,6 +17,10 @@
                 </button>
                 {{/if}}
                 <button class="btn btn-large btn-block btn-primary" id="tutorqueue">Tutor Queue</button>
+                {{#if isAdmin}}
+                <button class="btn btn-large btn-block btn-primary" id="tapoutqueue">Tapout Queue</button>
+                <button class="btn btn-large btn-block btn-primary" id="swipescreen">Swipe Screen</button>
+                {{/if}}
                 <button class="btn btn-large btn-block btn-danger" id="logout">Logout</button>
                 <br />
                 <a href="http://blackboard.bentley.edu" class="btn btn-block" target="_blank">Blackboard Site</a>

@@ -19,11 +19,21 @@ Template.tapoutqueue.signedInStudents = function() {
     return visits;
 };
 
+Template.tapoutqueue.events({
+    'click .back-to-dash': function() {
+        Meteor.Router.to('dashboard');
+    }
+});
+
 Template.student.events({
     'click button': function() {
         Visits.update({_id: this._id}, {$set: {'timeOut': new Date()}});
     }
 });
+
+Template.tapoutqueue.checkFrontScreen = function() {
+    return !Roles.userIsInRole(Meteor.userId(), 'frontScreen');
+};
 
 var nameConcat = function(name) {
     return name.substring(0, name.indexOf(' ') + 2) + '.'; 
