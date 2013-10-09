@@ -112,7 +112,6 @@ Template.userstable.events({
         }
     },
     'click #stopworking': function() {
-        console.log('click');
         var visit = WorkVisits.findOne({tutorId: this._id, timeOut: null});
         WorkVisits.update({_id: visit._id}, {$set: {timeOut: new Date()}});
     }
