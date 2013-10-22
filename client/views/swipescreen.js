@@ -41,23 +41,16 @@ Template.useridentry.events = {
             e.target.value += character;
         }
         // handle if user is found
-        if (e.target.value.length === 8) {
-            var hash = Meteor.sha1('@' + e.target.value);
-            //alert(hash);
-
-            if (Visits.findOne({universityID: hash, timeOut: null})) {
-                Meteor.Messages.postMessage('error', 'Student already signed in');
-                e.target.value = '';
-            } else {
-                var s = Students.findOne({universityID: hash});
-                if (s) {
-                    student = s;
-                    Session.set("innerTemplate", "studenthelp");
-                } else {
-                    Meteor.Messages.postMessage('error', 'Student does not exist');
-                    e.target.value = '';
-                }
-            }
+        var hash;
+        // Case 1: user typed ID,   8 chars
+        if (e.target.value.length === 8 && e.target.value.indexOf(';') === -1) {
+            hash = Meteor.sha1('@' + e.target.value);
+            checkIfStudentExists(hash);           
+        }
+        // Case 2: user swiped ID,  12 chars
+        else if (e.target.value.length === 12){
+            hash = e.target.value.substring(2, student.tmp.length - 2);
+            checkIfStudentExists(hash);
         }
     }
 };
@@ -100,3 +93,22 @@ Template.courseselection.events({
         location.reload();
     }
 });
+
+
+///// Helpers /////
+var checkIfStudentExists = function(hash) {
+    if (Visits.findOne({universityID: hash, timeOut: null})) {
+        Meteor.Messages.postMessage('error', 'Student already signed in');
+        e.target.value = '';
+    } else {
+        var s = Students.findOne({universityID: hash});
+        if (s) {
+            student = s;
+            Session.set("innerTemplate", "studenthelp");
+        } else {
+            Meteor.Messages.postMessage('error', 'Student does not exist');
+            e.target.value = '';
+        }
+    }
+};
+/////         /////
