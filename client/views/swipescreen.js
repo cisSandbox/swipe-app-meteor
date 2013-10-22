@@ -12,6 +12,10 @@ Template.swipescreen.showDynamicContent = function() {
     return Template[Session.get("innerTemplate")]();
 };
 
+Template.swipescreen.first_screen = function() {
+    return Session.equals("innerTemplate", "useridentry");
+};
+
 Template.currenttutors.tutors = function() {
     var workVisits = WorkVisits.find({"timeOut": null}).fetch(),
         users = Meteor.users.find().fetch(),

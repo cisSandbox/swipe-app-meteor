@@ -2,7 +2,9 @@
     <div class="sandbox-logo">
         <img src="logo3.png">
     </div>
-    <h1>Swipe In</h1>
+    {{#if first_screen}}
+        <h1>Swipe In</h1>
+    {{/if}}
         {{{showDynamicContent}}}
     {{> currenttutors}}
 </template>
@@ -33,14 +35,22 @@
     	<input type="password" id="student-id-entry" autofocus />
     </div>
 </template>
+
 <template name="studenthelp">
-	<h2>Hello, {{studentName}}</h2>
-    <button class="btn btn-primary btn-large" id="needHelp">Need Help?</button>
-    <button class="btn btn-primary btn-large" id="noHelp">Just Chillin&rsquo;</button>
+    <div style="text-align:center">
+	   <h2>Hello, {{studentName}}</h2>
+        <h4>Please touch one of the following two options:</h4>
+    </div>
+    <div class="row-fluid">
+        <button class="btn btn-primary btn-large span3 offset3"  id="needHelp">I need help</button>    
+        <button class="btn btn-primary btn-large span3" id="noHelp">I'm just chillin' :)</button>
+    </div>
 </template>
 
 <template name="courseselection">
-    <h2>Please select the course you need help with:</h2>
+    <div style="text-align:center">
+        <h2>Please select the course you need help with:</h2>
+    </div>
     <div class="courses">
         {{#each courses}}
             <button class="btn btn-info btn-large" value="{{abbr}}">{{abbr}}</button>
