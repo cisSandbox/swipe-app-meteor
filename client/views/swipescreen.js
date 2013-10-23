@@ -4,8 +4,10 @@
 
  */
 
-var reg = new RegExp('^[0-9|;]+$');
-var student;
+var reg = new RegExp('^[0-9|;]+$')
+, student
+, flag = false;
+
 Session.set("innerTemplate", "useridentry");
 
 Template.swipescreen.showDynamicContent = function() {
@@ -41,16 +43,19 @@ Template.useridentry.events = {
             e.target.value += character;
         }
         // handle if user is found
-        var hash;
+        var hash
+        , swipe = e.target.value;
         // Case 1: user typed ID,   8 chars
-        if (e.target.value.length === 8 && e.target.value.indexOf(';') === -1) {
-            hash = Meteor.sha1('@' + e.target.value);
-            checkIfStudentExists(hash);           
+        if (swipe.length === 8 && swipe.indexOf(';') === -1) {
+            hash = Meteor.sha1('@' + swipe);
+            console.log("hash from typed ID: " + hash);
+            checkIfStudentExists(hash, e);           
         }
         // Case 2: user swiped ID,  12 chars
-        else if (e.target.value.length === 12){
-            hash = e.target.value.substring(2, student.tmp.length - 2);
-            checkIfStudentExists(hash);
+        else if (swipe.length === 12 && flag === false){
+            hash = Meteor.sha1('@'+swipe.substring(2, swipe.length - 2));
+            console.log("hash from swiped ID: " + hash);
+            flag = checkIfStudentExists(hash, e);
         }
     }
 };
@@ -96,18 +101,21 @@ Template.courseselection.events({
 
 
 ///// Helpers /////
-var checkIfStudentExists = function(hash) {
+var checkIfStudentExists = function(hash, e) {
     if (Visits.findOne({universityID: hash, timeOut: null})) {
         Meteor.Messages.postMessage('error', 'Student already signed in');
         e.target.value = '';
+        return false;
     } else {
         var s = Students.findOne({universityID: hash});
         if (s) {
             student = s;
             Session.set("innerTemplate", "studenthelp");
+            return true;
         } else {
             Meteor.Messages.postMessage('error', 'Student does not exist');
             e.target.value = '';
+            return false;
         }
     }
 };
