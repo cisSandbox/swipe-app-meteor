@@ -68,7 +68,7 @@ Template.edituser.courses = function() {
 };
 
 Template.tutorhistory.tutoredVisits = function() {
-    return TutoredVisits.find({tutorId: Meteor.userId()}, {limit: 10});
+    return TutoredVisits.find({tutorId: Meteor.userId()}, {sort: {timeHelped:-1}, limit: 10});
 };
 
 Template.edituser.events({
