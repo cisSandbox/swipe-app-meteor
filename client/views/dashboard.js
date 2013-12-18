@@ -145,3 +145,41 @@ Template.createuser.events({
         Meteor.Messages.postMessage('success', 'User created successfully');
     }
 });
+
+///////////////
+// REPORTING //
+///////////////
+
+//  --------------  //
+//  Tutoring Hours  //
+//  --------------  //
+Template.hoursWorked.dayWorked = function() {
+    var dayWorked   = [],   // {"day":"", "timeIn":"", "timeOut":"", "diff":""} 
+        myDays      = WorkVisits.find({'tutorId': Meteor.userId()}, {sort: {timeIn:-1}, limit: 10}).fetch();
+    //console.log(myDays);
+    _.each(myDays, function(e) {
+        dayWorked.push({
+            'day'       : e.timeIn.toLocaleDateString('en-US', {weekday:'short', month:'short', day:'numeric'}),
+            'timeIn'    : e.timeIn.toLocaleTimeString('en-US', {hour12: true}),
+            'timeOut'   : e.timeOut.toLocaleTimeString('en-US', {hour12: true}),
+            'diff'      : ((e.timeOut - e.timeIn) / (1000 * 60 * 60)).toFixed(1) + ' hours'
+        });
+    });
+    return dayWorked;
+};
+
+//  ---------------  //
+//  Student History  //
+//  ---------------  //
+
+
+
+
+
+
+
+
+
+
+
+
