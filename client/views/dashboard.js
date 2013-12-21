@@ -192,6 +192,25 @@ Template.studentHistory.tutorSession = function(e,t) {
     return session;
 };
 
+//  -------------  //
+//  Admin Reports  //
+//  -------------  //
+Template.adminReports.rendered = function(){
+    //Get the context of the canvas element we want to select
+    var ctx = document.getElementById("myChart").getContext("2d"),
+        data = {
+            labels:["IT 101", "CS 180", "CS 213"],
+            datasets:[
+                {
+                    fillColor:"#ffacac",
+                    strokeColor:"#ffffff",
+                    data:[1,2,3]
+                }
+            ]
+        },
+        myNewChart = new Chart(ctx).Bar(data);
+};
+
 
 
 

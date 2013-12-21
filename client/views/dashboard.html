@@ -42,6 +42,7 @@
             {{#if isAdmin}}
             <li><a href="#tab4" data-toggle="tab">Manage Users</a></li>
             <li><a href="#tab5" data-toggle="tab">Add User</a></li>
+            <li><a href="#tab7" data-toggle="tab">Admin Reports</a></li>
             
             {{/if}}
         </ul>
@@ -64,6 +65,9 @@
             </div>
             <div class="tab-pane" id="tab5">
                 {{> createuser}}
+            </div>
+            <div class="tab-pane" id="tab7">
+                {{> adminReports}}
             </div>
             
             {{/if}}
@@ -294,7 +298,13 @@
             </tr>
         {{/each}}        
     </table>
+</template>
 
+<template name="adminReports">
+    <legend>Administrative Reports</legend>
+    <div class="alert alert-error"> &gt; Note that this chart is made with static data. <br>
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
 </template>
 
 
