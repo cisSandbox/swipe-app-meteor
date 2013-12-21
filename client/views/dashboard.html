@@ -38,9 +38,12 @@
             <li class="active"><a href="#tab1" data-toggle="tab">My Profile</a></li>
             <li><a href="#tab2" data-toggle="tab">Tutor History</a></li>
             <li><a href="#tab3" data-toggle="tab">My Hours</a></li>
+            <li><a href="#tab6" data-toggle="tab">Student Lookup</a></li>
             {{#if isAdmin}}
             <li><a href="#tab4" data-toggle="tab">Manage Users</a></li>
             <li><a href="#tab5" data-toggle="tab">Add User</a></li>
+            <li><a href="#tab7" data-toggle="tab">Admin Reports</a></li>
+            
             {{/if}}
         </ul>
         <div class="tab-content background-gray">
@@ -51,7 +54,10 @@
                 {{> tutorhistory}}
             </div>
             <div class="tab-pane" id="tab3">
-                {{> tutorhours}}
+                {{> hoursWorked}}
+            </div>
+            <div class="tab-pane" id="tab6">
+                {{> studentHistory}}
             </div>
             {{#if isAdmin}}
             <div class="tab-pane" id="tab4">
@@ -60,6 +66,10 @@
             <div class="tab-pane" id="tab5">
                 {{> createuser}}
             </div>
+            <div class="tab-pane" id="tab7">
+                {{> adminReports}}
+            </div>
+            
             {{/if}}
         </div>
     </div>
@@ -87,26 +97,6 @@
             {{/each}}
         </tbody>
     </table>
-</template>
-
-<template name="tutorhours">
-    <legend>My Hours, Current Week</legend>
-   <!-- <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Day</th>
-                <th>Hours Worked</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>-->
 </template>
 
 <template name="profile">
@@ -264,3 +254,64 @@
 
 <!-- MAIN PROFESSORS DASHBOARD -->
 <template name="professordashboard"></template>
+
+<!-- REPORTING TEST DASHBOARD -->
+<template name="hoursWorked">
+    <legend>Hours Worked, Past 14 Days</legend>
+    <table class="table table-striped table-bordered">
+        <tr>
+            <th>Day</th>
+            <th>Time In</th>
+            <th>Time Out</th>
+            <th>Hours Worked</th>
+        </tr>
+        {{#each dayWorked}}
+            <tr>
+                <td>{{day}}</td>
+                <td>{{timeIn}}</td>
+                <td>{{timeOut}}</td>
+                <td>{{diff}}</td>
+            </tr>
+        {{/each}}
+    </table>
+</template>
+
+<template name="studentHistory">
+    <legend>Student History</legend>
+    <div class="input-append">
+        <input type="text" id="studentLookupTxt" placeholder="Student Full Name"/>
+        <button id="studentLookupBtn" class="btn btn-primary" type="submit"><i class="icon-search icon-white"></i> Search</button>    
+    </div>
+    <table class="table table-striped table-bordered">
+        <tr>
+            <th width="15%">Date</th>
+            <th width="10%">Course</th>
+            <th width="20%">Tutored By</th>
+            <th width="*">Notes</th>
+        </tr>
+        {{#each tutorSession}}
+            <tr>
+                <td>{{date}}</td>
+                <td>{{course}}</td>
+                <td>{{tutoredBy}}</td>
+                <td>{{notes}}</td>
+            </tr>
+        {{/each}}        
+    </table>
+</template>
+
+<template name="adminReports">
+    <legend>Administrative Reports</legend>
+    <div class="alert alert-error"> &gt; Note that this chart is made with static data. <br>
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+</template>
+
+
+
+
+
+
+
+
+

@@ -145,3 +145,81 @@ Template.createuser.events({
         Meteor.Messages.postMessage('success', 'User created successfully');
     }
 });
+
+///////////////
+// REPORTING //
+///////////////
+
+//  --------------  //
+//  Tutoring Hours  //
+//  --------------  //
+Template.hoursWorked.dayWorked = function() {
+    var dayWorked   = [],   // {"day":"", "timeIn":"", "timeOut":"", "diff":""} 
+        myDays      = WorkVisits.find({tutorId: Meteor.userId(), timeOut:{$not:null}, timeIn:{$gt : new Date(new Date().getTime() - (14 * 24 * 60 * 60 * 1000))}}, {sort: {timeIn:-1}, limit: 10}).fetch();
+    //console.log(myDays);
+    _.each(myDays, function(e) {
+        dayWorked.push({
+            'day'       : e.timeIn.toLocaleDateString('en-US', {weekday:'short', month:'short', day:'numeric'}),
+            'timeIn'    : e.timeIn.toLocaleTimeString('en-US', {hour12: true, hour:'2-digit', minute:'2-digit'}),
+            'timeOut'   : e.timeOut.toLocaleTimeString('en-US', {hour12: true, hour:'2-digit', minute:'2-digit'}),
+            'diff'      : ((e.timeOut - e.timeIn) / (1000 * 60 * 60)).toFixed(1) + ' hours'
+        });
+    });
+    return dayWorked;
+};
+
+//  ---------------  //
+//  Student History  //
+//  ---------------  //
+Template.studentHistory.events({
+    'click #studentLookupBtn': function(e,t) {
+        Session.set('currStudent', t.find('#studentLookupTxt').value);
+        Meteor.flush();
+    }
+});
+Template.studentHistory.tutorSession = function(e,t) {
+    var session     = [],
+        history     = TutoredVisits.find({name: Session.get('currStudent')}, {sort: {timeIn:-1}, limit:10}).fetch();
+    //console.log(history);
+    _.each(history, function(e) {
+        session.push({
+            'date'      : e.timeIn.toLocaleDateString('en-US', {weekday:'short', month:'short', day:'numeric'}),
+            'course'    : e.course,
+            'tutoredBy' : e.tutorName,
+            'notes'     : e.description
+        });
+    });
+    return session;
+};
+
+//  -------------  //
+//  Admin Reports  //
+//  -------------  //
+Template.adminReports.rendered = function(){
+    //Get the context of the canvas element we want to select
+    var ctx = document.getElementById("myChart").getContext("2d"),
+        data = {
+            labels:["IT 101", "CS 180", "CS 213"],
+            datasets:[
+                {
+                    fillColor:"#ffacac",
+                    strokeColor:"#ffffff",
+                    data:[1,2,3]
+                }
+            ]
+        },
+        myNewChart = new Chart(ctx).Bar(data);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
