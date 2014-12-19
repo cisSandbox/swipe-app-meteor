@@ -56,3 +56,74 @@ table {
     height:300px;
     background-size:cover;
 }
+
+/*Zhe's style*/
+
+.hidden{
+    
+    display: none;
+}
+
+.date_section_header{
+    
+    font-size: 18px;
+    position: relative;
+    font-family: sans-serif;
+    display: inline;
+    padding-top: 7px;
+}
+
+.date_section{
+    width:130px;
+}
+
+.btn-position{
+    
+    
+    position:relative;
+    margin-bottom: 11px;
+    margin-left:10px;
+    height: 30px;
+    
+}
+
+
+/*admin reports style*/
+
+.report_list{
+    
+    list-style-type: none;
+    border: 1px dashed green;
+
+}
+
+
+
+.report_list p{
+    
+    font-size: large;
+    font-family: sans-serif;
+    text-align: left;
+    color: red;
+    
+}
+
+.report_list table{
+    
+    width: 700px;
+    border-bottom: 1px dashed red;
+}
+
+#instruction{
+    
+    font-size: small;
+    margin-left: 5px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    
+}
+
+.report_list li{
+    
+    margin-bottom: 20px;
+}
